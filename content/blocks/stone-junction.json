@@ -1,0 +1,19 @@
+{
+  "type": "Junction",
+  "name": "stone-junction",
+  "localizedName": "Каменный перекрёсток",
+  "description": "Позволяет двум конвейерным линиям пересекаться крест-накрест без смешивания ресурсов. Обладает хорошей прочностью.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 60,
+  "capacity": 6,
+  "speed": 26,
+  
+  "requirements": [
+    { "item": "stone", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "stone-router",
+  "researchCost": [ "stone/20" ]
+}

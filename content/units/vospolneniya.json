@@ -1,0 +1,77 @@
+{
+  "type": "flying",
+  "name": "vospolneniya",
+  "localizedName": "Восполнение",
+  "description": "Продвинутый Т2 юнит поддержки планеты Флоралия. Оснащен уникальными парными плазменными пушками по бокам корпуса. Автоматически восстанавливает разрушенные здания, чинит стены и копает руду. Обладает постоянной исцеляющей аурой.",
+  "shownPlanets": [ "floralia" ],
+  
+  "flying": true,
+  "drag": 0.05,
+  "speed": 2.2,
+  "rotateSpeed": 8.0,
+  "accel": 0.15,
+  "itemCapacity": 40,
+  "health": 1300,
+  "armor": 3,
+  "hitSize": 12,
+  
+  "buildSpeed": 0.8,
+  "mineTier": 2,
+  "mineSpeed": 2.5,
+  "mineItems": [ "stone", "clay", "metal" ],
+  
+  "abilities": [
+    {
+      "type": "RepairFieldAbility",
+      "amount": 5.0,
+      "reload": 90.0,
+      "range": 45.0
+    }
+  ],
+  
+  "weapons": [
+    {
+      "name": "vospolneniya-weapon",
+      "reload": 30.0,
+      "x": 3.75,
+      "y": -0.5,
+      "shootY": 3.0,
+      "mirror": true,
+      "top": false,
+      "recoil": 1.5,
+      "shootSound": "shootMissilePlasmaShort",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 35.0,
+        "healPercent": 1.0,
+        "collidesTeam": true,
+        
+        "speed": 5.5,
+        "lifetime": 30.0,
+        
+        "width": 10.0,
+        "height": 10.0,
+        "shrinkX": 0.0,
+        "shrinkY": 0.0,
+        
+        "frontColor": "ffffff",
+        "backColor": "b2ffb2",
+        "mixColorFrom": "98ff98",
+        
+        "splashDamage": 30.0,
+        "splashDamageRadius": 30.0,
+        
+        "shootEffect": "shootHeal",
+        "smokeEffect": "none",
+        "hitEffect": "heal",
+        "despawnEffect": "healWave",
+        "hitSound": "heal-defend"
+      }
+    }
+  ],
+  "controller": "BuilderAI",
+  "research": {
+    "parent": "numale",
+    "requirements": ["iron-ingot/250", "metal-glass/300", "glass-metal-alloy/150"]
+  }
+}

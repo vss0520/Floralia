@@ -1,0 +1,56 @@
+{
+  "type": "Reconstructor",
+  "name": "flora-reconstructor",
+  "localizedName": "Реконструктор Флоры",
+  "description": "Модернизирует начальных юнитов Т1 до уровня Т2. Потребляет энергию, воду и продвинутые материалы для пересборки корпусов.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 3,
+  "health": 580,
+  "category": "units",
+  
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  
+  "constructTime": 1800.0,
+  "liquidCapacity": 40.0,
+  
+  "consumes": {
+    "power": 5.0,
+    "items": [
+      { "item": "glass-metal-alloy", "amount": 80 },
+      { "item": "iron-ingot", "amount": 20 },
+      { "item": "metal-glass", "amount": 10 }
+    ],
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.333
+    }
+  },
+  
+  "upgrades": [
+    [ "pyro-dagger", "pyro-mace" ],
+    [ "purple-walker", "extraction" ],
+    [ "lincho", "kvado"],
+    [ "numale", "vospolneniya"],
+    [ "flora-bomber", "flora-fighter"],
+    [ "nilo", "delta" ]
+  ],
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 80 },
+    { "item": "glass-metal-alloy", "amount": 40 },
+    { "item": "brick", "amount": 100 }
+  ],
+  "research": {
+  "parent": "flora-unit-factory",
+  "objectives": [
+      {
+      "type": "SectorComplete",
+      "preset": "second-sector"
+      }
+    ]
+  },
+  "researchCost": [ "iron-ingot/500", "brick/300" ]
+}

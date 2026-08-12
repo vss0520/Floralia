@@ -1,0 +1,36 @@
+{
+  "type": "UnitFactory",
+  "name": "flora-naval-factory",
+  "localizedName": "Водная верфь Флоры",
+  "description": "Производственная верфь формата 3х3. Устанавливается на стыке суши и воды. Проектирует и спускает на воду начальные Т1 корабли планеты Floralia.",
+  "planet": "floralia",
+  
+  "size": 3,
+  "health": 350,
+  "category": "units",
+  
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 40,
+  "consumes": {
+    "power": 1.5
+  }, 
+  "plans": [
+    {
+      "unit": "nilo",
+      "time": 900.0,
+      "requirements": [
+        { "item": "iron-ingot", "amount": 45 },
+        { "item": "brick", "amount": 15 },
+        { "item": "metal-glass", "amount": 30 }
+      ]
+    }
+  ],
+  "requirements": [
+    { "item": "iron-ingot", "amount": 70 },
+    { "item": "brick", "amount": 30 },
+    { "item": "metal-glass", "amount": 50 }
+  ],  
+  "research": "flora-unit-factory",
+  "researchCost": [ "iron-ingot/200", "brick/150" ]
+}

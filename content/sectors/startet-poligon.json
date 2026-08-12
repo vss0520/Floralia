@@ -1,0 +1,13 @@
+{
+  "name": "startet-poligon",
+  "localizedName": "Стартовый полигон Z",
+  "description": "Стартовый полигон Z - Для выживших это не просто территория для восстановления экосистемы, но и символический центр сопротивления. Здесь формируются альянсы, планируются вылазки и отрабатываются тактики борьбы за свободу.",
+  "planet": "floralia",
+  "sector": 0,
+  "difficulty": 1,
+  "alwaysUnlocked": true,
+ "overrideLaunchDefaults": true,
+ "captureWave": 23,
+ "waves": true,
+ "map": "startet-poligon"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "OreBlock",
+  "name": "stone",
+  "localizedName": "камень",
+  "itemDrop": "stone",
+  "mineable": true,
+  "mineTier": 1,
+  "mineTime": 40
+}

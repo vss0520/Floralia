@@ -1,0 +1,46 @@
+{
+  "type": "UnitFactory",
+  "name": "flora-air-factory",
+  "localizedName": "Завод воздушных юнитов",
+  "description": "Производит начальных летающих юнитов планеты Floralia: сборщиков ресурсов Нумаль и дронов-камикадзе Взрывник.",
+  "planet": "floralia",
+  
+  "size": 3,
+  "health": 350,
+  "category": "units",
+  
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 20,
+  
+  "consumes": {
+    "power": 1.2
+  },
+  
+  "plans": [
+    {
+      "unit": "numale",
+      "time": 900.0,
+      "requirements": [
+        { "item": "iron-ingot", "amount": 15 },
+        { "item": "metal-glass", "amount": 15 }
+      ]
+    },
+    {
+      "unit": "flora-bomber",
+      "time": 750.0,
+      "requirements": [
+        { "item": "iron-ingot", "amount": 17 },
+        { "item": "charcoal", "amount": 10 }
+      ]
+    }
+  ],
+  
+  "requirements": [
+    { "item": "brick", "amount": 40 },
+    { "item": "iron-ingot", "amount": 25 },
+    { "item": "metal-glass", "amount": 15 }
+  ],
+  "research": "brick-factory",
+  "researchCost": [ "brick/400", "iron-ingot/250", "metal-glass/150" ]
+}

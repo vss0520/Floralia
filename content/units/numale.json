@@ -1,0 +1,26 @@
+{
+  "type": "flying",
+  "name": "numale",
+  "localizedName": "Нумаль",
+  "description": "Летающий юнит поддержки. Автоматически добывает базовые ресурсы (камень, глину) и доставляет их в ядро.",
+  "shownPlanets": [ "floralia" ],
+  "flying": true,
+  "drag": 0.06,
+  "speed": 1.8,
+  "rotateSpeed": 7.0,
+  "accel": 0.12,
+  "itemCapacity": 20,
+  "health": 450,
+  "armor": 1,
+  "hitSize": 8,
+  
+  "mineTier": 1,
+  "mineSpeed": 1.5,
+  "mineItems": [ "stone", "clay" ],
+  
+  "controller": "MinerAI",
+  "research": {
+    "parent": "flora-air-factory",
+    "requirements": ["iron-ingot/150", "metal-glass/100"]
+  }
+}

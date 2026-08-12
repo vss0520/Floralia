@@ -1,0 +1,20 @@
+{
+  "type": "LiquidBridge",
+  "name": "Metal Glass Liquid Bridge",
+  "localizedName": "Жидкостный мост",
+  "description": "Переносит жидкости над блоками и постройками по воздуху.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 70,
+  "category": "liquid",
+  
+  "range": 4,
+  "hasPower": false,
+  
+  "requirements": [
+    { "item": "metal-glass", "amount": 5 },
+    { "item": "stone", "amount": 5 }
+  ],
+  "research": "metal-glass-liquid-junction",
+  "researchCost": [ "metal-glass/50", "stone/50" ]
+}

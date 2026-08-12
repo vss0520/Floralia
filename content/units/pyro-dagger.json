@@ -1,0 +1,51 @@
+{
+  "type": "mech",
+  "name": "pyro-dagger",
+  "localizedName": "Пиро-Кинжал",
+  "description": "Вражеский шагающий робот. Выпускает зажигательные снаряды со стандартным звуком выстрела Кинжала.",
+  "shownPlanets": [ "floralia" ],
+  
+  "speed": 0.55,
+  "hitSize": 8.0,
+  "health": 550.0,
+  "mechFrontSway": 0.55,
+  
+  "immunities":[
+    "burning"
+  ],
+  
+  "weapons": [
+    {
+      "top": false,
+      "x": 4.0,
+      "y": 2.0,
+      "shootY": 2.0,
+      "reload": 20.0,
+      "recoil": 1.0,
+      
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 20.0,
+        "speed": 3.0,
+        "lifetime": 40.0,
+        "width": 7.0,
+        "height": 9.0,
+        
+        "frontColor": "ffaa5f",
+        "backColor": "d37f3a",
+        "status": "burning",
+        "statusDuration": 240.0,
+        "incendChance": 0.4,
+        "incendAmount": 1,
+        
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "hitEffect": "hitFlameSmall"
+      }
+    }
+  ],
+  "research": {
+    "parent": "flora-unit-factory",
+    "requirements": ["charcoal/50", "iron-ingot/150"]
+  }
+}

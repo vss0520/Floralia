@@ -1,0 +1,31 @@
+{
+  "type": "Drill",
+  "name": "Brick Drill",
+  "localizedName": "Кирпичный бур",
+  "description": "Прочный бур из обожженного кирпича. Способен добывать металлическую руду. Можно ускорить подачей воды.",
+  
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 1500,
+  "category": "production",
+  
+  "tier": 3,
+  "drillTime": 300.0,
+  
+  "consumes": {
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.05,
+      "booster": true,
+      "optional": true
+    }
+  },
+  
+  "requirements": [
+    { "item": "brick", "amount": 20 },
+    { "item": "clay", "amount": 10 }
+  ],
+  "research": "brick-factory",
+  "researchCost": [ "brick/200", "clay/100" ]
+}

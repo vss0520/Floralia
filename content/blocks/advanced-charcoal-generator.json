@@ -1,0 +1,43 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Advanced Charcoal Generator",
+  "localizedName": "Продвинутый угольный генератор",
+  "description": "Мощная турбина следующего поколения. Сжигает древесный уголь вместе с древесиной, вырабатывая 390 единиц энергии.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 850,
+  "hasItems": true,
+  "itemCapacity": 15,
+  "category": "power",
+  
+  "powerProduction": 6.5,
+  "itemDuration": 120.0,
+  
+  "consumes": {
+    "items": [
+      { "item": "charcoal", "amount": 1 },
+      { "item": "wood", "amount": 1 }
+    ]
+  },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawTop"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 20 },
+    { "item": "metal-glass", "amount": 15 },
+    { "item": "brick", "amount": 40 }
+  ],
+  "research": "advanced-charcoal-kiln",
+  "researchCost": [ "iron-ingot/200", "metal-glass/150", "brick/400" ]
+}

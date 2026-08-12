@@ -1,0 +1,23 @@
+{
+  "type": "StorageBlock",
+  "name": "flora-container",
+  "localizedName": "Контейнер Флоры",
+  "description": "Среднее хранилище для ресурсов. Расширяет общую вместимость ядра, если построен вплотную к нему. Может использоваться отдельно для накопления предметов на конвейерных линиях.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 350,
+  "category": "effect",
+  
+  "itemCapacity": 450,
+  "hasItems": true,
+  "coreMerge": true,
+  
+  "requirements": [
+    { "item": "glass-metal-alloy", "amount": 35 },
+    { "item": "iron-ingot", "amount": 15 },
+    { "item": "metal-glass", "amount": 10 }
+  ],
+  "research": "brick-wall",
+  "researchCost": [ "glass-metal-alloy/200", "iron-ingot/150", "metal-glass/100" ]
+}

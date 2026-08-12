@@ -1,0 +1,17 @@
+{
+  "name": "naval-outpost",
+  "localizedName": "Водный Аванпост",
+  "description": "",
+  "planet": "floralia",
+  "sector": 3,
+  "difficulty": 3,
+  "alwaysUnlocked": false,
+  "attack": true,
+  "waves": false,
+  "overrideLaunchDefaults": true,
+  "allowLaunchLoadout": true,
+  "allowLaunchSchematics": true,
+  "map": "naval-outpost",
+  "research": "flora-reconstructor",
+  "requireZoneCapture": true
+}

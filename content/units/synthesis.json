@@ -1,0 +1,61 @@
+{
+  "type": "flying",
+  "name": "synthesis",
+  "localizedName": "Синтез",
+  "description": "Тяжёлый воздушный корабль поддержки Т3. Выполняет прямые команды игрока, а в режиме ожидания автоматически чинит базу. Излучает ауру регенерации и копает замбий.",
+  "shownPlanets": [ "floralia" ],
+  "flying": true,
+  "health": 2500,
+  "armor": 7,
+  "hitSize": 13.0,
+  "speed": 2.5,
+  "rotateSpeed": 4.5,
+  "accel": 0.1,
+  "drag": 0.04,
+  "buildSpeed": 2.5,
+  "mineSpeed": 4.5,
+  "mineTier": 4,
+  "itemCapacity": 80,
+  "mineItems": [ "stone", "clay", "metal", "zambiy" ],
+  "engineSize": 5.0,
+  "engineOffset": 10.5,
+  "controller": "BuilderAI",
+  
+  "isCounted": false,
+  "abilities": [
+    {
+      "type": "RepairFieldAbility",
+      "amount": 15.0,
+      "reload": 60.0,
+      "range": 80.0
+    }
+  ], 
+  "weapons": [
+    {
+      "name": "synthesis-heavy-laser",
+      "reload": 95.0,
+      "x": 0.0,
+      "y": 2.0,
+      "shootY": 4.0,
+      "mirror": false,
+      "top": false,
+      "shootSound": "shootForeshadow",
+      "bullet": {
+        "type": "LaserBulletType",
+        "damage": 270.0,
+        "healPercent": 3.0,
+        "collidesTeam": true,
+        "length": 190.0,
+        "width": 12.0,
+        "recoil": 6.5,
+        "colors": [ "4a90e2", "87cefa", "ffffff" ],
+        "hitEffect": "hitLaser",
+        "despawnEffect": "none",
+      }
+    }
+  ],
+  "research": {
+    "parent": "vospolneniya",
+    "requirements": ["glass-metal-alloy/500", "zambit/400", "metal-glass/700"]
+  }
+}

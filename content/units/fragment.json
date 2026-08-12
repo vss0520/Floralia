@@ -1,0 +1,105 @@
+{
+  "type": "legs",
+  "name": "fragment",
+  "localizedName": "Фрагмент",
+  "description": "Тяжёлый осадный шагоход Т3. Способен перешагивать через стены и препятствия. Оснащён четырьмя вампирическими лазерами истощения ближнего боя и одной мощной пушкой, стреляющей тяжёлыми фиолетовыми сферами.",
+  "shownPlanets": [ "floralia" ],
+  
+  "drag": 0.1,
+  "speed": 0.75,
+  "rotateSpeed": 4.5,
+  "health": 2700,
+  "armor": 6,
+  "hitSize": 15,
+  
+  "legCount": 6,
+  "legLength": 14.0,
+  "legSpeed": 0.2,
+  "legForwardMovement": 0.6,
+  "hovering": true,
+  
+  "weapons": [
+    {
+      "name": "fragment-sap-laser",
+      "reload": 13.0,
+      "x": 6.0,
+      "y": 4.0,
+      "shootY": 1.0,
+      "mirror": true,
+      "alternate": true,
+      "top": true,
+      "ejectEffect": "none",
+      "shootSound": "shootSap",
+      "bullet": {
+        "type": "SapBulletType",
+        "damage": 30.0,
+        "sapPercent": 0.1,
+        "length": 65.0,
+        "width": 0.6,
+        "lifetime": 15.0,
+        "color": "bf69eb",
+        "status": "sapped",
+        "statusDuration": 120.0
+      }
+    },
+    {
+      "name": "fragment-sap-laser",
+      "reload": 13.0,
+      "x": 7.5,
+      "y": -3.5,
+      "shootY": 1.0,
+      "mirror": true,
+      "alternate": true,
+      "top": true,
+      "ejectEffect": "none",
+      "shootSound": "shootSap",
+      "bullet": {
+        "type": "SapBulletType",
+        "damage": 30.0,
+        "sapPercent": 0.1,
+        "length": 65.0,
+        "width": 0.6,
+        "lifetime": 15.0,
+        "color": "bf69eb",
+        "status": "sapped",
+        "statusDuration": 120.0
+      }
+    },
+    {
+      "name": "fragment-heavy-cannon",
+      "reload": 75.0,
+      "x": 0.0,
+      "y": 1.0,
+      "shootY": 4.0,
+      "mirror": false,
+      "top": true,
+      "shake": 2.0,
+      "shootSound": "shootRipple",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "circle",
+        "damage": 175.0,
+        "speed": 3.0,
+        "lifetime": 45.0,
+        "width": 14.0,
+        "height": 14.0,
+        "shrinkX": 0.0,
+        "shrinkY": 0.0,
+        "frontColor": "ffffff",
+        "backColor": "7a2ba8",
+        "mixColorToMultiplier": 1.0,
+        "trailColor": "bf69eb",
+        "trailWidth": 4.0,
+        "trailLength": 12,
+        "status": "sapped",
+        "statusDuration": 300.0,
+        "hitEffect": "hitLaser",
+        "despawnEffect": "none"
+      }
+    }
+  ],
+  "research": {
+    "parent": "extraction",
+    "requirements": ["glass-metal-alloy/550", "zambit/350", "iron-ingot/700"]
+  }
+}

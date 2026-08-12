@@ -1,0 +1,21 @@
+{
+  "type": "Conveyor",
+  "name": "wood-conveyor",
+  "localizedName": "Деревянный конвейер",
+  "description": "Перемещает ресурсы быстрее медного аналога, но легко воспламеняется от огня или лазеров.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 45,
+  "speed": 0.04,
+  "displayedSpeed": 5.3,
+  
+  "flammability": 1.2,
+  
+  "requirements": [
+    { "item": "wood", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "wood",
+  "researchCost": [ "wood/20" ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "WallCrafter",
+  "name": "wood-extractor",
+  "localizedName": "Лесопилка 'шрэдер' ",
+  "description": "Продвинутый настенный бур формата 3х3. Устанавливается вплотную к скалам с деревянными корнями. Выдает ровно 1 дерево в секунду за каждый добывающий блок.",
+  "planet": "floralia",
+  
+  "size": 3,
+  "health": 280,
+  "category": "production",
+  
+  "hasPower": true,
+  "hasLiquids": true,
+  "hasItems": true,
+  "itemCapacity": 15,
+  "liquidCapacity": 20.0,
+  
+  "drillTime": 60.0,
+  "attribute": "wood_source",
+  "output": "wood",
+  
+  "consumes": {
+    "power": 1.5,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.025
+    }
+  },
+  
+  "requirements": [
+    { "item": "brick", "amount": 50 },
+    { "item": "metal-glass", "amount": 30 },
+    { "item": "iron-ingot", "amount": 15 }
+  ],
+  "research": "heavy-wood-crusher",
+  "researchCost": ["brick/150", "metal-glass/90", "iron-ingot/50" ]
+}

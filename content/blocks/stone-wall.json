@@ -1,0 +1,19 @@
+{
+  "type": "Wall",
+  "name": "stone-wall",
+  "localizedName": "Каменная стена",
+  "description": "Прочная оборонительная стена из камня. В отличие от деревянной, абсолютно невосприимчива к огню.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 500,
+  "flammability": 0.0,
+  "category": "defense",
+  
+  "requirements": [
+    { "item": "stone", "amount": 12 }
+  ],
+  
+  "research": "stone-drill",
+  "researchCost": [ "stone/400" ]
+}

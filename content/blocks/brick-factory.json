@@ -1,0 +1,31 @@
+{
+  "type": "GenericCrafter",
+  "name": "brick-factory",
+  "localizedName": "Кирпичный завод",
+  "description": "Использует древесный уголь для обжига глины, превращая её в прочные кирпичи.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "hasPower": true,
+  "hasItems": true,
+  "craftTime": 60.0,
+  
+  "consumes": {
+    "power": 1.0,
+    "items": [
+      { "item": "clay", "amount": 2 },
+      { "item": "charcoal", "amount": 1 }
+    ]
+  },
+  
+  "outputItem": { "item": "brick", "amount": 1 },
+  
+  "requirements": [
+    { "item": "clay", "amount": 30 },
+    { "item": "stone", "amount": 50 }
+  ],
+  
+  "category": "crafting",
+  "research": "clay",
+  "researchCost": [ "clay/300", "stone/500" ]
+}

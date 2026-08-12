@@ -1,0 +1,170 @@
+{
+  "type": "ItemTurret",
+  "name": "metal-aa",
+  "localizedName": "Зенитная установка Град",
+  "description": "Специализированная оборонительная турель ПВО. Ведёт огонь исключительно по воздушным целям. Поддерживает использование шрапнели, осколочного металлостекла и тяжелых высокотехнологичных сплавов. Эффективно ускоряется подачей воды на 1.5х.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 550,
+  "category": "turret",
+  
+  "range": 250.0,
+  "reload": 15.0,
+  "inaccuracy": 4.0,
+  "shootCone": 35.0,
+  "rotateSpeed": 10.0,
+  
+  "targetGround": false,
+  "targetAir": true,
+  
+  "hasLiquids": true,
+  "liquidCapacity": 15.0,
+  
+  "consumes": {
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.08,
+      "booster": true,
+      "boostScale": 1.5,
+      "optional": true
+    }
+  },
+  
+  "shoot": {
+    "type": "ShootAlternate",
+    "shots": 2,
+    "spread": 4.0,
+    "shotDelay": 0.0
+  },
+  
+  "ammoTypes": {
+    "iron-ingot": {
+      "type": "FlakBulletType",
+      "damage": 10.0,
+      "speed": 6.5,
+      "lifetime": 31.0,
+      "width": 8.0,
+      "height": 10.0,
+      "splashDamage": 5.0,
+      "splashDamageRadius": 10.0,
+      "ammoMultiplier": 3,
+      "frontColor": "ffffff",
+      "backColor": "b0bac0",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootEffect": "shootBig",
+      "shootSound": "shootDisperse",
+      
+      "fragBullets": 3,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 5.0,
+        "speed": 3.0,
+        "lifetime": 15.0,
+        "width": 4.0,
+        "height": 6.0,
+        "frontColor": "ffffff",
+        "backColor": "b0bac0"
+      }
+    },
+    "metal-glass": {
+      "type": "FlakBulletType",
+      "damage": 7.0,
+      "speed": 7.0,
+      "lifetime": 29.0,
+      "width": 7.0,
+      "height": 9.0,
+      "splashDamage": 3.0,
+      "splashDamageRadius": 15.0,
+      "ammoMultiplier": 4,
+      "frontColor": "ffffff",
+      "backColor": "a2c4db",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootEffect": "shootBig",
+      "shootSound": "shootDisperse",
+      
+      "fragBullets": 7,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 5.0,
+        "speed": 4.0,
+        "lifetime": 15.0,
+        "width": 3.0,
+        "height": 5.0,
+        "frontColor": "ffffff",
+        "backColor": "a2c4db"
+      }
+    },
+    "glass-metal-alloy": {
+      "type": "FlakBulletType",
+      "damage": 15.0,
+      "speed": 7.5,
+      "lifetime": 27.0,
+      "width": 9.0,
+      "height": 12.0,
+      "splashDamage": 7.0,
+      "splashDamageRadius": 15.0,
+      "reloadMultiplier": 1.15,
+      "ammoMultiplier": 2,
+      "frontColor": "ffffff",
+      "backColor": "7cb843",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootEffect": "shootBig",
+      "shootSound": "shootDisperse",
+      
+      "fragBullets":10,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 10.0,
+        "speed": 4.5,
+        "lifetime": 17.0,
+        "width": 4.5,
+        "height": 7.0,
+        "frontColor": "ffffff",
+        "backColor": "7cb843"
+      }
+    },   
+    "zambit": {
+      "type": "FlakBulletType",
+      "damage": 22.0,
+      "speed": 7.2,
+      "lifetime": 28.0,
+      "width": 8.5,
+      "height": 11.0,
+      "splashDamage": 35.0,
+      "splashDamageRadius": 28.0,
+      "status": "burning",
+      "statusDuration": 150.0,
+      "ammoMultiplier": 3,
+      "frontColor": "ffffff",
+      "backColor": "a3ff52",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootEffect": "shootBig",
+      "shootSound": "shootDisperse",
+      "fragBullets": 6,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 6.0,
+        "speed": 4.2,
+        "lifetime": 12.0,
+        "status": "burning",
+        "width": 4.0,
+        "height": 6.0,
+        "frontColor": "ffffff",
+        "backColor": "a3ff52"
+      }
+    }
+
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 55 },
+    { "item": "metal-glass", "amount": 40 }
+  ],
+  "research": "ballista",
+  "researchCost": [ "iron-ingot/550", "metal-glass/400" ]
+}

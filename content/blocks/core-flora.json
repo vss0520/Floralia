@@ -1,0 +1,24 @@
+{
+  "type": "CoreBlock",
+  "name": "core-flora",
+  "localizedName": "Ядро: Росток",
+  "description": "Базовое ядро для экспедиций на планету Флорария. Защищает скромные запасы камня и древесины. Строится только на зонах ядер.",
+  "planet": "floralia",
+  "size": 3,
+  "health": 1500,
+  "itemCapacity": 1500,
+  "unitCapModifier": 6,
+  "unitType": "flora-worker",
+  "requiresCoreZone": true,
+  "requirements": [
+    { "item": "stone", "amount": 800 },
+    { "item": "wood", "amount": 500 }
+  ],
+  "category": "effect",
+  "alwaysUnlocked": true,
+  "research": {
+    "planet": "floralia",
+    "root": true,
+    "name": "floralia"
+  }
+}

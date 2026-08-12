@@ -1,0 +1,13 @@
+{
+  "type": "item",
+  "name": "fire-arrow",
+  "localizedName": "Огненная стрела",
+  "shownPlanets": [ "floralia" ],
+  "description": "Зажигательный боеприпас, начиненный прессованным углем. Горит при столкновении с целью.",
+  
+  "cost": 1.5,
+  "color": "ff9436",
+  "flammability": 2.5,
+  "explosiveness": 0.2,
+  "search": "fire-arrow-factory"
+}

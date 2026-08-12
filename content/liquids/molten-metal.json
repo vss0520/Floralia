@@ -1,0 +1,13 @@
+{
+  "name": "Molten Metal",
+  "localizedName": "Расплавленный металл",
+  "description": "Раскаленный докрасна жидкий металл. Очень горячий и опасный.",
+  "color": "e0592b",
+  "lightColor": "e0592b",
+  "flammability": 0.0,
+  "temperature": 0.9,
+  "heatCapacity": 0.2,
+  "viscosity": 0.6,
+  "explosiveness": 0.0,
+  "research": "metal-smelter"
+}

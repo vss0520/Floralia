@@ -1,0 +1,56 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "zambiy-rtg",
+  "localizedName": "Замбиевый генератор",
+  "description": "Замбиевый генератор. Вырабатывает пассивную энергию из радиоактивного материала  Замбий",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 380,
+  "category": "power",
+  
+  "hasItems": true,
+  "itemCapacity": 10,
+  
+  "powerProduction": 4.0,
+  "itemDuration": 240.0,
+  
+  "consumes": {
+    "items": [
+      {
+        "item": "zambiy",
+        "amount": 1
+      }
+    ]
+  },
+  
+  "fuelItems": {
+    "zambiy": {
+      "powerMultiplier": 0.7,
+      "duration": 240.0
+    },
+    "zambit": {
+      "powerMultiplier": 1.4,
+      "duration": 360.0
+    }
+  },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawDefault" },
+      {
+        "type": "DrawWarmap",
+        "color": "a3ff52"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "zambit", "amount": 25 },
+    { "item": "glass-metal-alloy", "amount": 40 },
+    { "item": "iron-ingot", "amount": 60 }
+  ],
+  "research": "flora-steam-generator",
+  "researchCost": ["zambit/150", "glass-metal-alloy/200"]
+}

@@ -1,0 +1,285 @@
+{
+  "planet": "floralia",
+  "parent": "core-flora",
+  "nodes": [
+    {
+      "node": "core-flora",
+      "children": [
+        { "node": "core-shrub" },
+        {
+          "node": "startet-poligon",
+          "children": [
+            {
+              "node": "second-sector",
+              "objectives": [
+                { "type": "Research", "preset": "stone-wall-large" }
+              ],
+              "children": [
+                {
+                  "node": "zavesa",
+                  "objectives": [
+                    { "type": "Research", "preset": "flora-reconstructor" },
+                    { "type": "SectorComplete", "preset": "second-sector" }
+                  ]
+                },
+                {
+                  "node": "naval-outpost",
+                  "objectives": [
+                    { "type": "Research", "preset": "flora-reconstructor" },
+                    { "type": "SectorComplete", "preset": "second-sector" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": "stone",
+      "parent": "core-flora",
+      "children": [
+        {
+          "node": "stone-drill",
+          "children": [
+            { 
+              "node": "stone-wall", 
+              "children": [
+                { 
+                  "node": "stone-wall-large",
+                  "objectives": [
+                    { "type": "SectorComplete", "preset": "startet-poligon" }
+                  ]
+                }
+              ] 
+            }
+          ]
+        },
+        {
+          "node": "stone-conveyor",
+          "children": [
+            {
+              "node": "stone-router",
+              "children": [
+                { "node": "stone-junction", "children": [{ "node": "stone-bridge" }] },
+                { "node": "stone-sorter", "children": [{ "node": "stone-inverted-sorter" }] }
+              ]
+            },
+            { "node": "stone-overflow-gate", "children": [{ "node": "stone-underflow-gate" }] }
+          ]
+        },
+        {
+          "node": "clay",
+          "children": [
+            { "node": "block-clay-ore" },
+            {
+              "node": "brick-factory",
+              "children": [
+                { "node": "large-brick-factory" },
+                {
+                  "node": "brick",
+                  "children": [
+                    { "node": "brick-drill" },
+                    { 
+                      "node": "brick-wall", 
+                      "children": [
+                        { "node": "brick-wall-large" },
+                        { "node": "shotgun" }
+                      ] 
+                    },
+                    {
+                      "node": "metal-glass-kiln",
+                      "children": [
+                        { 
+                          "node": "bio-distiller", 
+                          "children": [
+                            { "node": "bio-fuel" },
+                            { "node": "zambit-mixer", "children": [{ "node": "zambit", "children": [{ "node": "zambit-gatl" }] }] }
+                          ] 
+                        },
+                        {
+                          "node": "metal-glass",
+                          "children": [
+                            { "node": "metal-glass-pump", "children": [{ "node": "flora-hydro-pump" }] },
+                            {
+                              "node": "metal-glass-conduit",
+                              "children": [
+                                {
+                                  "node": "metal-glass-liquid-router",
+                                  "children": [
+                                    { "node": "metal-glass-liquid-junction", "children": [{ "node": "metal-glass-liquid-bridge" }, { "node": "splash" }, { "node": "flora-liquid-tank" }] }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "node": "metal-smelter",
+                              "children": [
+                                {
+                                  "node": "molten-metal",
+                                  "children": [
+                                    {
+                                      "node": "foundry",
+                                      "children": [
+                                        {
+                                          "node": "iron-ingot",
+                                          "children": [
+                                            { "node": "iron-conveyor" },
+                                            { "node": "zambiy" },
+                                            { "node": "large-foundry" },
+                                            {
+                                              "node": "ballista",
+                                              "children": [
+                                                { "node": "metal-aa" },
+                                                { "node": "heavy-artillery" },
+                                                { "node": "cluster-turret" },
+                                                { "node": "pulsar", "children": [{ "node": "energy-vortex" }] }
+                                              ]
+                                            },
+                                            { "node": "iron-wall", "children": [{ "node": "iron-wall-large" }, { "node": "iron-mend-projector" }] },
+                                            {
+                                              "node": "metal-bolt-factory",
+                                              "children": [
+                                                { "node": "crossbow" },
+                                                { "node": "metal-bolt" }
+                                              ]
+                                            },
+                                            {
+                                              "node": "alloy-foundry",
+                                              "children": [
+                                                { "node": "flora-solar-panel" },
+                                                { "node": "flora-hydro-drill" },
+                                                { "node": "flora-hydro-extractor" },
+                                                { "node": "flora-steam-generator", "children": [{ "node": "zambiy-rtg" }] },
+                                                {
+                                                  "node": "glass-metal-alloy",
+                                                  "children": [
+                                                    { "node": "flora-large-battery" },
+                                                    { "node": "flora-container", "children": [{ "node": "iron-unloader" }] }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+{
+      "node": "wood-crusher",
+      "parent": "core-flora",
+      "children": [
+        { 
+          "node": "heavy-wood-crusher",
+          "children": [
+            { "node": "wood-extractor" }
+          ]
+        }
+      ]
+    },
+    {
+      "node": "wood",
+      "parent": "core-flora",
+      "children": [
+        { "node": "wood-wall", "children": [{ "node": "wood-wall-large" }] },
+        {
+          "node": "wood-conveyor",
+          "children": [
+            {
+              "node": "arrow-factory",
+              "children": [
+                {
+                  "node": "arrow",
+                  "children": [
+                    {
+                      "node": "bow",
+                      "children": [
+                        { "node": "fire-arrow-factory", "children": [{ "node": "fire-arrow" }] }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "node": "charcoal-kiln",
+          "children": [
+            { "node": "advanced-charcoal-kiln", "children": [{ "node": "charcoal" }] },
+            {
+              "node": "charcoal-generator",
+              "children": [
+                { "node": "advanced-charcoal-generator" },
+                { "node": "flora-power-node", "children": [{ "node": "flora-battery", "children": [{ "node": "flora-big-power-node" }] }] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": "flora-unit-factory",
+      "parent": "core-flora",
+      "children": [
+        { "node": "iron-repair-point" },
+        { "node": "pyro-dagger", "children": [{ "node": "purple-walker" }] },
+        { 
+          "node": "lincho", 
+          "children": [
+            { "node": "kvado", "children": [{ "node": "renucho" }] }
+          ] 
+        },
+        { 
+          "node": "flora-naval-factory", 
+          "children": [
+            {
+              "node": "nilo",
+              "children": [
+                { "node": "delta", "children": [{ "node": "atlant" }] }
+              ]
+            }
+          ] 
+        },
+        {
+          "node": "flora-air-factory",
+          "children": [
+            { "node": "flora-bomber", "children": [{ "node": "flora-fighter" }] },
+            { 
+              "node": "numale", 
+              "children": [
+                { 
+                  "node": "flora-reconstructor", 
+                  "objectives": [
+                    { "type": "SectorComplete", "preset": "second-sector" }
+                  ],
+                  "children": [
+                    { "node": "vospolneniya" }, 
+                    { "node": "pyro-mace" }, 
+                    { "node": "extraction" }, 
+                    { "node": "flora-t3-reconstructor" }
+                  ] 
+                }
+              ] 
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

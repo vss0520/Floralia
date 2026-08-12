@@ -1,0 +1,65 @@
+{
+  "type": "GenericCrafter",
+  "name": "large-foundry",
+  "localizedName": "Промышленный литейный цех",
+  "description": "Гигантский металлургический комплекс формата 3х3. Использует замбий как мощный катализатор для сверхбыстрого обжига расплавленного металла. Требует интенсивного водяного охлаждения.",
+  "planet": "floralia",
+  
+  "size": 3,
+  "health": 440,
+  "category": "crafting",
+  
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "itemCapacity": 10,
+  "liquidCapacity": 60.0,
+  "craftTime": 60.0,
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water",
+        "suffix": "-liquid"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "molten-metal",
+        "suffix": "-molten-metal"
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  
+  "consumes": {
+    "power": 2.0,
+    "items": [
+      { "item": "zambiy", "amount": 1 }
+    ],
+    "liquids": [
+      { "liquid": "molten-metal", "amount": 0.5 },
+      { "liquid": "water", "amount": 0.6667 }
+    ]
+  },
+  
+  "outputItem": {
+    "item": "iron-ingot",
+    "amount": 3
+  },
+  
+  "requirements": [
+    { "item": "glass-metal-alloy", "amount": 40 },
+    { "item": "iron-ingot", "amount": 60 },
+    { "item": "metal-glass", "amount": 35 }
+  ],
+  "research": "foundry",
+  "researchCost": ["glass-metal-alloy/200", "iron-ingot/300"]
+}

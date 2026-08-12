@@ -1,0 +1,36 @@
+{
+  "type": "MendProjector",
+  "name": "Iron Mender",
+  "localizedName": "Железный ремонтник",
+  "description": "Периодически восстанавливает прочность соседних блоков в небольшом радиусе. Подача расплавленного металла даёт контролируемое ускорение.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 1,
+  "health": 550,
+  "category": "effect",
+  
+  "range": 50.0,
+  "healPercent": 5.0,
+  "reload": 400.0,
+  "useFraction": false,
+  
+  "hasPower": true,
+  "consumes": {
+    "power": 1.5,
+    "liquid": {
+      "liquid": "molten-metal",
+      "amount": 0.05,
+      "optional": true
+    }
+  },
+  
+  "boosterScale": 1.5,
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 30 },
+    { "item": "metal-glass", "amount": 10 },
+    { "item": "brick", "amount": 10 }
+  ],
+  "research": "iron-wall",
+  "researchCost": [ "iron-ingot/300", "metal-glass/100", "brick/100" ]
+}

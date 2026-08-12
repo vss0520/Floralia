@@ -1,0 +1,31 @@
+{
+  "type": "GenericCrafter",
+  "name": "Metal Glass Kiln",
+  "localizedName": "Печь металлостекла",
+  "description": "Плавит неплавленый metal вместе с глиной, создавая прочное металлостекло.",
+  
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 240,
+  "hasItems": true,
+  "craftTime": 60.0,
+  "category": "crafting",
+  
+  "consumes": {
+    "power": 1.0,
+    "items": [
+      { "item": "clay", "amount": 2 },
+      { "item": "metal", "amount": 1 }
+    ]
+  },
+  
+  "outputItem": { "item": "metal-glass", "amount": 1 },
+  
+  "requirements": [
+    { "item": "brick", "amount": 30 },
+    { "item": "clay", "amount": 10 }
+  ],
+  "research": "brick",
+  "researchCost": [ "brick/300", "clay/100" ]
+}

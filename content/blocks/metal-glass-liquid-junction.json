@@ -1,0 +1,17 @@
+{
+  "type": "LiquidJunction",
+  "name": "Metal Glass Liquid Junction",
+  "localizedName": "Жидкостный перекресток",
+  "description": "Позволяет двум пересекающимся трубам пропускать жидкости друг через друга без смешивания.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 60,
+  "category": "liquid",
+  
+  "requirements": [
+    { "item": "metal-glass", "amount": 2 },
+    { "item": "stone", "amount": 4 }
+  ],
+  "research": "metal-glass-conduit",
+  "researchCost": [ "metal-glass/20", "stone/40" ]
+}

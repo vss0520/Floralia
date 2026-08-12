@@ -1,0 +1,17 @@
+{
+  "name": "second-sector",
+  "localizedName": "Лесные Руины",
+  "description": "Место, где прошлое и настоящее сталкиваются. С одной стороны - остатки живой, некогда пышной природы, с другой - следы войны, хаоса и борьбы за власть.",
+  "planet": "floralia",
+  "sector": 1,
+  "difficulty": 2,
+  "alwaysUnlocked": false,
+  "overrideLaunchDefaults": true,
+  "allowLaunchLoadout": true,
+  "allowLaunchSchematics": true,
+  "map": "second-sector",
+  "captureWave": 33,
+  "waves": true,
+  "research": "stone-wall-large",
+  "requireZoneCapture": true
+}

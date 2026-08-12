@@ -1,0 +1,10 @@
+{
+  "type": "item",
+  "name": "brick",
+  "localizedName": "Кирпич",
+  "shownPlanets": [ "floralia" ],
+  "description": "Прочный строительный материал, обожжённый из глины и угля.",
+  "cost": 1.5,
+  "color": "c46c56",
+  "research": "brick-factory"
+}

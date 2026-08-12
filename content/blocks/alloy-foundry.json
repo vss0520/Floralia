@@ -1,0 +1,50 @@
+{
+  "type": "GenericCrafter",
+  "name": "alloy-foundry",
+  "localizedName": "Сплавная литейная",
+  "description": "Сплавляет готовые железные слитки с кристаллическим металлическим стеклом под воздействием высоких температур в мощном вращающемся тигле.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 3,
+  "health": 520,
+  "hasItems": true,
+  "category": "crafting",
+  
+  "craftTime": 50.0,
+  
+  "consumes": {
+    "power": 3.0,
+    "items": [
+      { "item": "iron-ingot", "amount": 2 },
+      { "item": "metal-glass", "amount": 1 }
+    ]
+  },
+  
+  "outputItem": { "item": "glass-metal-alloy", "amount": 1 },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawCrucibleFlame"
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-top",
+        "blending": "additive",
+        "color": "ff9436"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 50 },
+    { "item": "metal-glass", "amount": 40 },
+    { "item": "brick", "amount": 60 }
+  ],
+  "research": "foundry",
+  "researchCost": [ "iron-ingot/500", "metal-glass/400", "brick/600" ]
+}

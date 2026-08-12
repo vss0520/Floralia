@@ -1,0 +1,42 @@
+{
+  "type": "GenericCrafter",
+  "name": "zambit-mixer",
+  "localizedName": "Сплавная мешалка Замбита",
+  "description": "Высокотехнологичный смеситель формата 2х2. Безопасно насыщает сухой порошок замбия жидким биотопливом под давлением, отливая салатовые слитки замбита.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 340,
+  "category": "crafting",
+  
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "itemCapacity": 20,
+  "liquidCapacity": 50.0,
+  "craftTime": 120.0,
+  
+  "consumes": {
+    "power": 3.0,
+    "items": [
+      { "item": "zambiy", "amount": 7 }
+    ],
+    "liquid": {
+      "liquid": "bio-fuel",
+      "amount": 0.2
+    }
+  },
+  
+  "outputItem": {
+    "item": "zambit",
+    "amount": 2
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 50 },
+    { "item": "glass-metal-alloy", "amount": 30 },
+    { "item": "metal-glass", "amount": 25 }
+  ],
+  "research": "bio-distiller",
+  "researchCost": ["iron-ingot/250", "glass-metal-alloy/150"]
+}

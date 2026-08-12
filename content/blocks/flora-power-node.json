@@ -1,0 +1,22 @@
+{
+  "type": "PowerNode",
+  "name": "flora-power-node",
+  "localizedName": "Энергетический узел Флоры",
+  "description": "Базовый деревянный столб для передачи электроэнергии. Связывает генераторы и потребителей тока в единую сеть.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 80,
+  "category": "power",
+  
+  "laserRange": 10.0,
+  "maxNodes": 10,
+  
+  "requirements": [
+    { "item": "wood", "amount": 3 },
+    { "item": "stone", "amount": 1 }
+  ],
+  
+  "research": "charcoal-generator",
+  "researchCost": [ "wood/30", "stone/10" ]
+}

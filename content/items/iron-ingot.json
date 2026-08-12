@@ -1,0 +1,13 @@
+{
+  "name": "Iron Ingot",
+  "localizedName": "Железный слиток",
+  "shownPlanets": [ "floralia" ],
+  "description": "Прочный кусок очищенного железа. Основа для продвинутого машиностроения и брони.",
+  "planet": "floralia",
+  "color": "b0bac2",
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "hardness": 3,
+  "cost": 3.0,
+  "research": "foundry"
+}

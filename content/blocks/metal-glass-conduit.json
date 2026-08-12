@@ -1,0 +1,20 @@
+{
+  "type": "Conduit",
+  "name": "Metal Glass Conduit",
+  "localizedName": "Металлостеклянная труба",
+  "description": "Транспортирует жидкости. Сделана из прочного металлостекла, устойчивого к давлению.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 60,
+  "category": "liquid",
+  
+  "liquidCapacity": 16.0,
+  "liquidPressure": 1.0,
+  
+  "requirements": [
+    { "item": "metal-glass", "amount": 1 },
+    { "item": "stone", "amount": 1 }
+  ],
+  "research": "metal-glass",
+  "researchCost": [ "metal-glass/10", "stone/10" ]
+}

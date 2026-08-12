@@ -1,0 +1,48 @@
+{
+  "type": "WallCrafter",
+  "name": "heavy-wood-crusher",
+  "localizedName": "Тяжелый измельчитель дерева",
+  "description": "Мощная лесопилка размера 2х2. Потребляет электроэнергию и эффективно срезает со стен древесину со скоростью четырех базовых буров при идеальной установке.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 240,
+  "drillTime": 130.0,
+  "attribute": "wood_source",
+  "output": "wood",
+  
+  "hasPower": true,
+  "consumes": {
+    "power": 0.3333
+  },
+  
+  "hasItems": true,
+  "itemCapacity": 20,
+  
+  "requirements": [
+    { "item": "stone", "amount": 70 },
+    { "item": "wood", "amount": 30 }
+  ],
+  
+  "category": "production",
+  "research": "wood-crusher",
+  "researchCost": [ "stone/350", "wood/150" ],
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRotator",
+        "suffix": "-rotator",
+        "speed": 4.5
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  }
+}

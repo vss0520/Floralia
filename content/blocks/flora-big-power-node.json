@@ -1,0 +1,20 @@
+{
+  "type": "PowerNode",
+  "name": "flora-big-power-node",
+  "localizedName": "Большой энергоузел Флоры",
+  "description": "Крупный силовой распределитель формата 2х2. Обладает увеличенной прочностью и огромным радиусом покрытия. Способен связывать множество энергобытовых приборов.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 220,
+  "category": "power",
+  
+  "maxNodes": 30,
+  "laserRange": 25.0, 
+  "requirements": [
+    { "item": "metal-glass", "amount": 3 },
+    { "item": "iron-ingot", "amount": 2 }
+  ],
+  "research": "flora-power-node",
+  "researchCost": ["metal-glass/25", "iron-ingot/15"]
+}

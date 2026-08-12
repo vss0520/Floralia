@@ -1,0 +1,47 @@
+{
+  "type": "flying",
+  "name": "motylek",
+  "localizedName": "Мотылёк",
+  "description": "Продвинутый дрон Т2 ядра. Оснащён эффективными лазерными бурами и парными ремонтными пушками, стреляющими зелёными энерго-зарядами.",
+  "shownPlanets": [ "floralia" ],
+  
+  "flying": true,
+  "mineSpeed": 5.0,
+  "mineTier": 3,
+  "buildSpeed": 1.8,
+  
+  "drag": 0.05,
+  "speed": 4.2,
+  "rotateSpeed": 14.0,
+  "accel": 0.2,
+  
+  "health": 200,
+  "armor": 2,
+  "hitSize": 6.5,
+  "itemCapacity": 50,
+  "isCounted": false,
+  
+  "weapons": [
+    {
+      "name": "motylek-weapon",
+      "reload": 15.0,
+      "x": 3.5,
+      "y": 0.5,
+      "shootY": 2.0,
+      "mirror": true,
+      "top": false,
+      "bullet": {
+        "type": "LaserBoltType",
+        "damage": 17.0,
+        "buildingDamageMultiplier": 0.05,
+        "healPercent": 1.0,
+        "collidesTeam": true,
+        "speed": 6.5,
+        "lifetime": 20.0,
+        "frontColor": "ffffff",
+        "backColor": "b2ffb2"
+      }
+    }
+  ],
+  "controller": "BuilderAI"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Charcoal Generator",
+  "localizedName": "Угольный генератор",
+  "description": "Сжигает древесный уголь, вырабатывая 120 единиц энергии. Благодаря эффективной конструкции потребляет топливо в два раза медленнее.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 420,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "category": "power",
+  
+  "powerProduction": 2.0,
+  "itemDuration": 120.0,
+  
+  "consumes": {
+    "items": [
+      { "item": "charcoal", "amount": 1 }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "stone", "amount": 50 },
+    { "item": "wood", "amount": 30 }
+  ],
+  "research": "charcoal-kiln",
+  "researchCost": [ "stone/500", "wood/300" ]
+}

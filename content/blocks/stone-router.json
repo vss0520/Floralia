@@ -1,0 +1,20 @@
+{
+  "type": "Router",
+  "name": "stone-router",
+  "localizedName": "Каменный маршрутизатор",
+  "description": "Распределяет поступающие ресурсы по трём направлениям. Имеет повышенную прочность по сравнению с медным аналогом.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 65,
+  "hasItems": true,
+  "itemCapacity": 5,
+  
+  "requirements": [
+    { "item": "stone", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "stone-conveyor",
+  "researchCost": [ "stone/20" ]
+  
+}

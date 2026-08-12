@@ -1,0 +1,68 @@
+{
+  "type": "mech",
+  "name": "renucho",
+  "localizedName": "Ренучо",
+  "description": "Тяжёлый осадный мех поддержки Т3. Защищает армию колоссальным куполом-щитом и мощным двойным полем регенерации, стремительно латающим любые повреждения союзников.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 2300,
+  "armor": 8,
+  "hitSize": 16.0,
+  "speed": 0.42,
+  "rotateSpeed": 3.5,
+  "drag": 0.4,
+  "buildSpeed": 2.2,
+  
+  "mechFrontSway": 0.7,
+  "mechSideSway": 0.6,
+  
+  "targetAir": true,
+  "targetGround": true,
+  
+  "controller": "BuilderAI",
+  "isCounted": false,
+  
+  "abilities": [
+    {
+      "type": "ForceFieldAbility",
+      "radius": 90.0,
+      "regen": 0.6,
+      "max": 600.0,
+      "cooldown": 240.0
+    },
+    {
+      "type": "RepairFieldAbility",
+      "amount": 15.0,
+      "reload": 60.0,
+      "range": 100.0
+    }
+  ], 
+  "weapons": [
+    {
+      "name": "renucho-laser",
+      "reload": 45.0,
+      "x": 7.0,
+      "y": 1.0,
+      "shootY": 4.0,
+      "mirror": true,
+      "alternate": true,
+      "top": true,
+      "shootSound": "shootLancer",
+      "bullet": {
+        "type": "LaserBulletType",
+        "damage": 175.0,
+        "healPercent": 1.0,
+        "collidesTeam": true,
+        "length": 160.0,
+        "width": 11.5,
+        "colors": [ "5cff5c", "b2ffb2", "ffffff" ],
+        "hitEffect": "hitLaser",
+        "despawnEffect": "none",
+      }
+    }
+  ],
+  "research": {
+    "parent": "kvado",
+    "requirements": ["glass-metal-alloy/500", "zambit/500", "iron-ingot/700"]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "GenericCrafter",
+  "name": "Foundry",
+  "localizedName": "Литейный цех",
+  "description": "Заливает расплавленный металл в формы и остужает его водой, создавая прочные железные слитки.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 280,
+  "hasItems": true,
+  "hasLiquids": true,
+  "category": "crafting",
+  
+  "craftTime": 60.0,
+  
+  "consumes": {
+    "liquids": [
+      { "liquid": "molten-metal", "amount": 0.15 },
+      { "liquid": "water", "amount": 0.2 }
+    ]
+  },
+  
+  "outputItem": { "item": "iron-ingot", "amount": 1 },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "molten-metal"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water"
+      },
+      {
+        "type": "DrawTop"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "brick", "amount": 20 },
+    { "item": "clay", "amount": 10 },
+    { "item": "metal-glass", "amount": 10 }
+  ],
+  "research": "molten-metal",
+  "researchCost": [ "brick/200", "clay/100", "metal-glass/100" ]
+}

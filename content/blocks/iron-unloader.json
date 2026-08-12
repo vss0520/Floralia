@@ -1,0 +1,22 @@
+{
+  "type": "Unloader",
+  "name": "iron-unloader",
+  "localizedName": "Железный разгрузчик",
+  "description": "Позволяет выбирать и принудительно выгружать предметы из смежных заводов, контейнеров или ядер на конвейерные линии.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 120,
+  "category": "effect",
+  
+  "itemCapacity": 10,
+  "speed": 1.0,
+  "hasItems": true,
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 15 },
+    { "item": "brick", "amount": 10 }
+  ],
+  "research": "flora-container",
+  "researchCost": [ "iron-ingot/150", "brick/100" ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "Wall",
+  "name": "stone-wall-large",
+  "localizedName": "Большая каменная стена",
+  "description": "Тяжелая оборонительная стена из камня. Способна выдерживать колоссальный урон и полностью защищена от огня.",
+  "planet": "floralia",
+  "size": 2,
+  "health": 2300,
+  "flammability": 0.0,
+  "category": "defense",
+  "requirements": [
+    { "item": "stone", "amount": 48 }
+  ],
+  "research": {
+    "parent": "stone-wall",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "startet-poligon"
+      }
+    ]
+  },
+  "researchCost": [ "stone/900" ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "Item",
+  "name": "clay",
+  "localizedName": "Глина",
+  "shownPlanets": [ "floralia" ],
+  "description": "Базовый строительный ресурс. Добывается из глиняного покрытия.",
+  "color": "c47551",
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "radioactivity": 0.0,
+  "charge": 0.0,
+  "cost": 1.0,
+  "hardness": 1,
+  "research": "stone",
+  "planet": "floralia"
+}

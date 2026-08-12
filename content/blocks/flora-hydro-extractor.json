@@ -1,0 +1,30 @@
+{
+  "type": "SolidPump",
+  "name": "flora-hydro-extractor",
+  "localizedName": "Гидро-экстрактор",
+  "description": "Продвинутая буровая установка планеты Floralia. Использует глубинное бурение для стабильного извлечения фиксированного объема воды прямо из недр, независимо от типа почвы.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 320,
+  "category": "production",
+  
+  "hasPower": true,
+  "hasLiquids": true,
+  "liquidCapacity": 60.0,
+  
+  "result": "water",
+  "pumpAmount": 0.1,
+  "baseEfficiency": 1.0,
+  
+  "consumes": {
+    "power": 1.0
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 35 },
+    { "item": "metal-glass", "amount": 25 }
+  ],
+  "research": "glass-metal-alloy",
+  "researchCost": [ "iron-ingot/350", "metal-glass/250" ]
+}

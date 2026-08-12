@@ -1,0 +1,19 @@
+{
+  "type": "Wall",
+  "name": "wood-wall",
+  "localizedName": "Деревянная стена",
+  "description": "Дешевая базовая защита. Легко возводится, но быстро загорается при огневом контакте.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 200,
+  "flammability": 0.8,
+  "category": "defense",
+  
+  "requirements": [
+    { "item": "wood", "amount": 6 }
+  ],
+  
+  "research": "wood-crusher",
+  "researchCost": [ "wood/400" ]
+}

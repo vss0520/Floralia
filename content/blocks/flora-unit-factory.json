@@ -1,0 +1,66 @@
+{
+  "type": "UnitFactory",
+  "name": "Flora Unit Factory",
+  "localizedName": "Фабрика юнитов Флоры",
+  "description": "Производит начальные боевые и вспомогательные единицы. Требует ресурсы и большое количество энергии для сборки корпусов.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 3,
+  "health": 450,
+  "category": "units",
+  
+  "hasPower": true,
+  "consumes": {
+    "power": 3.166
+  },
+  
+  "plans": [
+    {
+      "unit": "pyro-dagger",
+      "time": 1200.0,
+      "requirements": [
+        { "item": "iron-ingot", "amount": 35 },
+        { "item": "charcoal", "amount": 15 },
+        { "item": "metal-glass", "amount": 25 }
+      ]
+    },
+    {
+      "unit": "purple-walker",
+      "time": 1400.0,
+      "requirements": [
+        { "item": "iron-ingot", "amount": 35 },
+        { "item": "metal-glass", "amount": 20 },
+        { "item": "brick", "amount": 10 }
+      ]
+    },
+    {
+      "unit": "lincho",
+      "time": 1600.0,
+      "requirements": [
+        { "item": "iron-ingot", "amount": 30 },
+        { "item": "metal-glass", "amount": 25 },
+        { "item": "zambit", "amount": 15 }
+      ]
+    }
+  ],
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawTop"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 60 },
+    { "item": "metal-glass", "amount": 40 },
+    { "item": "brick", "amount": 80 }
+  ],
+  "research": "iron-ingot",
+  "researchCost": [ "iron-ingot/600", "metal-glass/400", "brick/800" ]
+}

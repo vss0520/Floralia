@@ -1,0 +1,19 @@
+{
+  "type": "Conveyor",
+  "name": "stone-conveyor",
+  "localizedName": "Каменный конвейер",
+  "description": "Очень прочный, но медленный транспортный блок. Идеален для прифронтовых зон снабжения.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 110,
+  "speed": 0.02,
+  "displayedSpeed": 2.6,
+  
+  "requirements": [
+    { "item": "stone", "amount": 1 }
+  ],
+  "category": "distribution",
+  "research": "stone",
+  "researchCost": [ "stone/10" ]
+}

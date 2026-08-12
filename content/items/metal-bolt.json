@@ -1,0 +1,15 @@
+{
+  "type": "item",
+  "name": "metal-bolt",
+  "shownPlanets": [ "floralia" ],
+  "localizedName": "Металлический болт",
+  "description": "Тяжелый и прочный стальной снаряд. Обладает высокой пробивающей способностью.",
+  
+  "cost": 2.0,
+  "color": "989aa6",
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "hardness": 3,
+  "radioactivity": 0.0,
+  "research": "metal-bolt-factory"
+}

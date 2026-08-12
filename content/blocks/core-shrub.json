@@ -1,0 +1,24 @@
+{
+  "type": "CoreBlock",
+  "name": "core-shrub",
+  "localizedName": "Ядро: Кустарник",
+  "description": "Продвинутое Т2 ядро планеты Floralia. Обеспечивает повышенную вместимость ресурсов и высокую прочность базы. Спавнит технологичного дрона поддержки Мотылёк.",
+  "planet": "floralia",
+  
+  "size": 4,
+  "health": 5000,
+  "category": "effect",
+  
+  "itemCapacity": 6000,
+  "unitType": "motylek",
+  "unitCapModifier": 12,
+  
+  "requirements": [
+    { "item": "brick", "amount": 1200 },
+    { "item": "iron-ingot", "amount": 800 },
+    { "item": "metal-glass", "amount": 600 },
+    { "item": "glass-metal-alloy", "amount": 400 }
+  ],
+  "research": "core-flora",
+  "researchCost": [ "brick/3000", "iron-ingot/2000", "metal-glass/1500", "glass-metal-alloy/1000" ]
+}

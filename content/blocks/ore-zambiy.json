@@ -1,0 +1,10 @@
+{
+  "type": "OreBlock",
+  "name": "ore-zambiy",
+  "localizedName": "Замбиевая жила",
+  
+  "itemDrop": "zambiy",
+  "variants": 3,
+  "useColor": true,
+  "mapColor": "ccd6dd"
+}

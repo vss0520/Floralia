@@ -1,0 +1,28 @@
+{
+  "type": "Pump",
+  "name": "flora-hydro-pump",
+  "localizedName": "Гидро-экстрактор Флоры",
+  "description": "Продвинутая гидро-помпа Floralia формата 2х2. Устанавливается строго на воду. Выдает ровно 48 единиц жидкости в секунду при покрытии 4 водных плиток.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 160,
+  "category": "liquid",
+  
+  "hasPower": true,
+  "hasLiquids": true,
+  "liquidCapacity": 60.0,
+  
+  "pumpAmount": 0.2,
+  
+  "consumes": {
+    "power": 1.5
+  }, 
+  "requirements": [
+    { "item": "metal-glass", "amount": 35 },
+    { "item": "iron-ingot", "amount": 20 },
+    { "item": "brick", "amount": 15 }
+  ],
+  "research": "metal-glass-pump",
+  "researchCost": ["metal-glass/150", "iron-ingot/100"]
+}

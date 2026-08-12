@@ -1,0 +1,43 @@
+{
+  "type": "GenericCrafter",
+  "name": "large-brick-factory",
+  "localizedName": "Промышленный кирпичный завод",
+  "description": "Крупный производственный комплекс формата 3х3. Использует воду под давлением, уголь и глину для массового обжига высокопрочных строительных кирпичей.",
+  "planet": "floralia",
+  
+  "size": 3,
+  "health": 420,
+  "category": "crafting",
+  
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "itemCapacity": 20,
+  "liquidCapacity": 40.0,
+  "craftTime": 60.0,
+  
+  "consumes": {
+    "power": 2.0,
+    "items": [
+      { "item": "clay", "amount": 5 },
+      { "item": "charcoal", "amount": 2 }
+    ],
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.15
+    }
+  },
+  
+  "outputItem": {
+    "item": "brick",
+    "amount": 3
+  },
+  
+  "requirements": [
+    { "item": "brick", "amount": 50 },
+    { "item": "metal-glass", "amount": 30 },
+    { "item": "iron-ingot", "amount": 30 }
+  ],
+  "research": "brick-factory",
+  "researchCost": ["brick/200", "iron-ingot/100", "metal-glass/150"]
+}

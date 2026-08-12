@@ -1,0 +1,68 @@
+{
+  "type": "mech",
+  "name": "lincho",
+  "localizedName": "Линчо",
+  "description": "Начальный Т1 шагоход поддержки Floralia. Идеально слушается команд игрока и защищает союзников куполом-щитом. Бьёт по очереди из рук мощными зелёными лазерными лучами.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 650,
+  "armor": 1,
+  "hitSize": 8.0,
+  "speed": 0.55,
+  "rotateSpeed": 5.0,
+  "drag": 0.4,
+  "buildSpeed": 0.8,
+  
+  "mechFrontSway": 0.5,
+  "mechSideSway": 0.4,
+  
+  "targetAir": true,
+  "targetGround": true,
+  
+  "controller": "BuilderAI",
+  "isCounted": false,
+  
+  "abilities": [
+    {
+      "type": "ForceFieldAbility",
+      "radius": 40.0,
+      "regen": 0.2,
+      "max": 200.0,
+      "cooldown": 120.0
+    },
+    {
+      "type": "RepairFieldAbility",
+      "amount": 4.0,
+      "reload": 60.0,
+      "range": 50.0
+    }
+  ], 
+  "weapons": [
+    {
+      "name": "lincho-laser",
+      "reload": 25.0,
+      "x": 4.0,
+      "y": 1.0,
+      "shootY": 2.0,
+      "mirror": true,
+      "alternate": true,
+      "top": false,
+      "shootSound": "shootLancer",
+      "bullet": {
+        "type": "LaserBulletType",
+        "damage": 15.0,
+        "healPercent": 1.0,
+        "collidesTeam": true,
+        "length": 85.0,
+        "width": 6.0,
+        "colors": [ "5cff5c", "b2ffb2", "ffffff" ],
+        "hitEffect": "hitLaser",
+        "despawnEffect": "none",
+      }
+    }
+  ],
+  "research": {
+    "parent": "flora-unit-factory",
+    "requirements": ["iron-ingot/100", "metal-glass/170", "zambit/75"]
+  }
+}

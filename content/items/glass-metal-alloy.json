@@ -1,0 +1,14 @@
+{
+  "type": "item",
+  "name": "glass-metal-alloy",
+  "localizedName": "Стеклометалл",
+  "description": "Композитный сплав из железа и закаленного стекла. Обладает невероятной легкостью и прочностью, необходимой для сборки тяжелых каркасов Т2 юнитов.",
+  
+  "cost": 3.0,
+  "color": "ccd5ff",
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "hardness": 4,
+  "radioactivity": 0.0,
+  "research": "alloy-foundry"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "Wall",
+  "name": "brick-wall-large",
+  "localizedName": "Большая кирпичная стена",
+  "description": "Занимает площадь 2х2. Обладает колоссальным запасом прочности, защищает от пожаров.",
+  "shownPlanets": [ "floralia" ],
+  "health": 2800,
+  "size": 2,
+  "flashHit": true,
+  "requirements": [
+    "brick/32"
+  ],
+  "category": "defense",
+  "research": "brick",
+  "researchCost": [ "brick/900" ]
+}

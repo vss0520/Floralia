@@ -1,0 +1,87 @@
+{
+  "type": "naval",
+  "name": "delta",
+  "localizedName": "Дельта",
+  "description": "Продвинутый Т2 боевой корабль Floralia. Идеально слушается команд игрока. Вооружён тяжёлой осадной мортирой с зажигательными снарядами и скорострельным автоматическим пулемётом.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 1700,
+  "armor": 4,
+  "hitSize": 13.0,
+  "speed": 0.75,
+  "rotateSpeed": 3.4,
+  "drag": 0.15,
+  
+  "trailLength": 22,
+  "trailX": 0.0,
+  "trailY": -6.0,
+  "trailWidth": 2.2,
+  
+  "targetAir": true,
+  "targetGround": true,
+  "faceTarget": false,
+  
+  "controller": "BuilderAI",
+  "isCounted": true, 
+  "weapons": [
+    {
+      "name": "delta-heavy-mortar",
+      "reload": 75.0,
+      "x": 0.0,
+      "y": 3.0,
+      "shootY": 4.0,
+      "mirror": false,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 4.2,
+      "shootSound": "shootArtillery",
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "damage": 125.0,
+        "speed": 3.2,
+        "lifetime": 55.0,
+        "width": 15.0,
+        "height": 15.0,
+        "splashDamage": 45.0,
+        "splashDamageRadius": 35.0,
+        "status": "burning",
+        "statusDuration": 120.0,
+        "frontColor": "ffffff",
+        "backColor": "ff9823",
+        "trailColor": "ff6f00",
+        "trailWidth": 2.5,
+        "trailLength": 8,
+        "hitEffect": "blastExplosion",
+        "despawnEffect": "none",
+      }
+    },
+    {
+      "name": "delta-minigun",
+      "reload": 5.0,
+      "x": 0.0,
+      "y": -4.0,
+      "shootY": 2.0,
+      "mirror": false,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 6.5,
+      "inaccuracy": 9.0,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 15.0,
+        "speed": 5.0,
+        "lifetime": 35.0,
+        "width": 5.0,
+        "height": 7.0,
+        "frontColor": "ffffff",
+        "backColor": "b0bac0",
+        "hitEffect": "none",
+        "despawnEffect": "none"
+      }
+    }
+  ],
+  "research": {
+    "parent": "nilo",
+    "requirements": ["iron-ingot/500", "glass-metal-alloy/250", "metal-glass/350"]
+  }
+}

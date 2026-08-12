@@ -1,0 +1,68 @@
+{
+  "type": "GenericCrafter",
+  "name": "bio-distiller",
+  "localizedName": "Био-дистиллятор",
+  "description": "Перерабатывает чистую древесину путём глубокого термического обжига с добавлением воды, преобразуя её в высококалорийное жидкое биотопливо.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 320,
+  "category": "crafting",
+  
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "liquidCapacity": 60.0,
+  "craftTime": 90.0,
+  
+  "consumes": {
+    "power": 1.5,
+    "items": [
+      { "item": "wood", "amount": 2 }
+    ],
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.1
+    }
+  },
+  
+  "outputLiquid": {
+    "liquid": "bio-fuel",
+    "amount": 0.2
+  },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water",
+        "suffix": "-liquid-water"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "bio-fuel",
+        "suffix": "-liquid-fuel"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "7cb843"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "brick", "amount": 35 },
+    { "item": "iron-ingot", "amount": 20 },
+    { "item": "metal-glass", "amount": 15 }
+  ],
+  "research": "metal-glass-kiln",
+  "researchCost": [ "brick/350", "iron-ingot/200", "metal-glass/150" ]
+}

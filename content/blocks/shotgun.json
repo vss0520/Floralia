@@ -1,0 +1,152 @@
+{
+  "type": "ItemTurret",
+  "name": "shotgun",
+  "localizedName": "Дробовик",
+  "description": "Компактное оборонительное орудие ближнего боя формата 1х1. Выстреливает плотный веер картечи, нанося огромный урон скоплениям врагов. Эффективность зависит от прочности боеприпасов.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 1,
+  "health": 240,
+  "category": "turret",
+  
+  "range": 100.0,
+  "reload": 75.0,
+  "inaccuracy": 12.0,
+  "shootCone": 30.0,
+  "rotateSpeed": 7.5,
+  "recoil": 2.0,
+  "shake": 1.0,
+  
+  "shoot": {
+    "type": "ShootSpread",
+    "shots": 7,
+    "spread": 4.5
+  },
+  
+  "ammoTypes": {
+    "stone": {
+      "type": "BasicBulletType",
+      "damage": 10.0,
+      "speed": 4.0,
+      "lifetime": 28.0,
+      "width": 5.0,
+      "height": 7.0,
+      "frontColor": "ffffff",
+      "backColor": "989aa4",
+      "ammoMultiplier": 2,
+      "shootSound": "shootDiffuse",
+    },
+    "metal-glass": {
+      "type": "BasicBulletType",
+      "damage": 15.0,
+      "speed": 4.5,
+      "lifetime": 25.0,
+      "width": 4.0,
+      "height": 6.0,
+      "frontColor": "ffffff",
+      "backColor": "a2c4db",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootSound": "shootDiffuse",
+      "fragBullets": 1,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 3.0,
+        "speed": 3.0,
+        "lifetime": 10.0,
+        "width": 2.5,
+        "height": 4.0,
+        "frontColor": "ffffff",
+        "backColor": "a2c4db"
+      }
+    },
+    "iron-ingot": {
+      "type": "BasicBulletType",
+      "damage": 17.0,
+      "speed": 4.2,
+      "lifetime": 27.0,
+      "width": 6.0,
+      "height": 9.0,
+      "frontColor": "ffffff",
+      "backColor": "b0bac0",
+      "ammoMultiplier": 3,
+      "shootSound": "shootDiffuse",
+    },
+    "glass-metal-alloy": {
+      "type": "BasicBulletType",
+      "damage": 25.0,
+      "speed": 4.8,
+      "lifetime": 23.0,
+      "width": 7.0,
+      "height": 10.0,
+      "frontColor": "ffffff",
+      "backColor": "7cb843",
+      "ammoMultiplier": 4,
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootSound": "shootDiffuse",
+      "fragBullets": 3,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 8.0,
+        "speed": 3.8,
+        "lifetime": 12.0,
+        "width": 3.5,
+        "height": 5.5,
+        "frontColor": "ffffff",
+        "backColor": "7cb843"
+      }
+    },
+    "zambiy": {
+      "type": "BasicBulletType",
+      "damage": 12.0,
+      "speed": 4.4,
+      "lifetime": 25.0,
+      "width": 6.0,
+      "height": 8.0,
+      "splashDamage": 10.0,
+      "splashDamageRadius": 16.0,
+      "status": "burning",
+      "statusDuration": 120.0,
+      "frontColor": "ffffff",
+      "backColor": "ccd6dd",
+      "ammoMultiplier": 3,
+      "shootSound": "shootDiffuse",
+    },
+    "zambit": {
+      "type": "BasicBulletType",
+      "damage": 20.0,
+      "speed": 4.6,
+      "lifetime": 24.0,
+      "width": 6.5,
+      "height": 9.5,
+      "status": "burning",
+      "statusDuration": 180.0,
+      "frontColor": "ffffff",
+      "backColor": "a3ff52",
+      "ammoMultiplier": 3,
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootSound": "shootDiffuse",
+      "fragBullets": 4,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 6.0,
+        "speed": 3.5,
+        "lifetime": 10.0,
+        "status": "burning",
+        "width": 3.0,
+        "height": 5.0,
+        "frontColor": "ffffff",
+        "backColor": "a3ff52"
+      }
+    }
+  },
+  
+  "requirements": [
+    { "item": "stone", "amount": 35 },
+    { "item": "brick", "amount": 25 }
+  ],
+  "research": "brick-wall",
+  "researchCost": ["stone/150", "brick/100"]
+}

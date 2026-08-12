@@ -1,0 +1,14 @@
+{
+  "type": "OreBlock",
+  "name": "block-metal-ore",
+  "localizedName": "Металлическая руда",
+  "itemDrop": "metal",
+  "variants": 3,
+  
+  "hardness": 3,
+  "tier": 3,
+  "oreScale": 25.0,
+  "oreThreshold": 0.8,
+  
+  "playerUnmineable": true
+}

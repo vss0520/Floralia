@@ -1,0 +1,17 @@
+{
+  "name": "zavesa",
+  "localizedName": "Завеса",
+  "description": "",
+  "planet": "floralia",
+  "sector": 2,
+  "difficulty": 4,
+  "alwaysUnlocked": false,
+  "attack": true,
+  "waves": true,
+  "overrideLaunchDefaults": true,
+  "allowLaunchLoadout": true,
+  "allowLaunchSchematics": true,
+  "map": "zavesa",
+  "research": "flora-reconstructor",
+  "requireZoneCapture": true
+}

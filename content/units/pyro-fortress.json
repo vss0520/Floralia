@@ -1,0 +1,101 @@
+{
+  "type": "mech",
+  "name": "pyro-fortress",
+  "localizedName": "Пиро Крепость",
+  "description": "Тяжёлый Т3 робот прорыва. Обладает абсолютным иммунитетом к огню. Вооружён двумя осадными орудиями, стреляющими разрывными огненными сферами с кассетным разделением, и двумя спаренными зажигательными пулемётами ближнего боя.",
+  "shownPlanets": [ "floralia" ],
+  
+  "drag": 0.4,
+  "speed": 0.50,
+  "rotateSpeed": 3.2,
+  "health": 2500,
+  "armor": 9,
+  "hitSize": 18,
+  
+  "immunities": [
+    "burning"
+  ],
+  
+  "weapons": [
+    {
+      "name": "pyro-fortress-cannon",
+      "reload": 95.0,
+      "x": 9.0,
+      "y": 1.0,
+      "shootY": 5.0,
+      "mirror": true,
+      "alternate": true,
+      "top": true,
+      "shake": 3.0,
+      "shootSound": "shootArtillery",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "circle",
+        "damage": 150.0,
+        "speed": 4.5,
+        "lifetime": 35.0,
+        "width": 12.0,
+        "height": 12.0,
+        "shrinkX": 0.0,
+        "shrinkY": 0.0,
+        "splashDamage": 100.0,
+        "splashDamageRadius": 50.0,
+        "frontColor": "ffffff",
+        "backColor": "ffb360",
+        "trailColor": "ff8400",
+        "trailWidth": 3.5,
+        "trailLength": 10,
+        "status": "burning",
+        "statusDuration": 180.0,
+        "hitEffect": "instBomb",
+        "despawnEffect": "none",
+        
+        "fragBullets": 10,
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "damage": 30.0,
+          "speed": 3.5,
+          "lifetime": 14.0,
+          "width": 4.0,
+          "height": 7.0,
+          "frontColor": "ffffff",
+          "backColor": "ffb360",
+          "status": "burning",
+          "statusDuration": 60.0,
+          "hitEffect": "none",
+          "despawnEffect": "none",
+        }
+      }
+    },
+    {
+      "name": "pyro-fortress-minigun",
+      "reload": 3.0,
+      "x": 6.5,
+      "y": 2.0,
+      "shootY": 3.0,
+      "mirror": true,
+      "alternate": false,
+      "top": true,
+      "shootSound": "shoot",
+      "inaccuracy": 8.0,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 15.0,
+        "speed": 5.5,
+        "lifetime": 22.0,
+        "width": 5.0,
+        "height": 8.0,
+        "frontColor": "ffffff",
+        "backColor": "ffb360",
+        "status": "burning",
+        "statusDuration": 30.0,
+        "hitEffect": "none",
+        "despawnEffect": "none"
+      }
+    }
+  ],
+  "research": {
+    "parent": "pyro-mace",
+    "requirements": ["glass-metal-alloy/500", "zambit/300", "metal-glass/700"]
+  }
+}

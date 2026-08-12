@@ -1,0 +1,93 @@
+{
+  "type": "naval",
+  "name": "atlant",
+  "localizedName": "Атлант",
+  "description": "Тяжёлый Т3 осадный линкор Floralia. Идеально слушается команд игрока. Вооружён двумя мощными артиллерийскими мортирами навесного боя и двумя спаренными пулемётами на носу.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 2700,
+  "armor": 8,
+  "hitSize": 19.0,
+  "speed": 0.62,
+  "rotateSpeed": 2.5,
+  "drag": 0.18,
+  
+  "trailLength": 32,
+  "trailX": 0.0,
+  "trailY": -9.0,
+  "trailWidth": 3.0,
+  
+  "targetAir": true,
+  "targetGround": true,
+  "faceTarget": false,
+  
+  "controller": "BuilderAI",
+  "isCounted": true, 
+  "weapons": [
+    {
+      "name": "atlant-heavy-mortar",
+      "reload": 95.0,
+      "x": 0.0,
+      "y": 4.0,
+      "shootY": 5.0,
+      "mirror": true,
+      "alternate": true,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 3.4,
+      "shootSound": "shootArtillery",
+      "shoot": {
+        "shots": 1,
+        "shotDelay": 0.0
+      },
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "damage": 175.0,
+        "speed": 3.5,
+        "lifetime": 60.0,
+        "width": 11.0,
+        "height": 11.0,
+        "splashDamage": 50.0,
+        "splashDamageRadius": 35.0,
+        "status": "burning",
+        "statusDuration": 240.0,
+        "frontColor": "ffffff",
+        "backColor": "ff8400",
+        "trailColor": "ff4500",
+        "trailWidth": 3.0,
+        "trailLength": 10,
+        "hitEffect": "blastExplosion",
+        "despawnEffect": "none",
+      }
+    },
+    {
+      "name": "atlant-front-minigun",
+      "reload": 3.0,
+      "x": 4.5,
+      "y": 8.0,
+      "shootY": 2.5,
+      "mirror": true,
+      "alternate": false,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 7.0,
+      "inaccuracy": 8.0,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 30.0,
+        "speed": 5.5,
+        "lifetime": 35.0,
+        "width": 5.5,
+        "height": 7.5,
+        "frontColor": "ffffff",
+        "backColor": "b0bac0",
+        "hitEffect": "none",
+        "despawnEffect": "none"
+      }
+    }
+  ],
+  "research": {
+    "parent": "delta",
+    "requirements": ["glass-metal-alloy/700", "zambiy/150", "iron-ingot/750", "metal-glass/900"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+ type: "material",
+ name: "stone",
+ "localizedName": "камень",
+ "planet": "floralia",
+ description: "the most common natural mineral",
+ hardness: 1,
+ cost:2.0
+ color: "000000"
+ tier: 2
+ research: "core-flora"
+}

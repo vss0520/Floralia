@@ -1,0 +1,129 @@
+{
+  "type": "ItemTurret",
+  "name": "zambit-gatl",
+  "localizedName": "Замбитовый пулемёт",
+  "description": "Тяжёлое скорострельное Т3 орудие формата 2х2. Обладает бешеной скорострельностью. Поддерживает широкий спектр боеприпасов Floralia — от обычного железа до нестабильного замбита.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 850,
+  "category": "turret",
+  
+  "range": 170.0,
+  "reload": 7.0,
+  "inaccuracy": 6.0,
+  "shootCone": 20.0,
+  "rotateSpeed": 7.0,
+  "recoil": 1.5,
+  "shake": 1.0,
+  
+  "ammoTypes": {
+    "iron-ingot": {
+      "type": "BasicBulletType",
+      "damage": 15.0,
+      "speed": 5.5,
+      "lifetime": 28.0,
+      "width": 6.5,
+      "height": 9.5,
+      "frontColor": "ffffff",
+      "backColor": "b0bac0",
+      "ammoMultiplier": 3
+    },
+    "metal-glass": {
+      "type": "BasicBulletType",
+      "damage": 10.0,
+      "speed": 6.0,
+      "lifetime": 25.0,
+      "width": 5.0,
+      "height": 8.0,
+      "frontColor": "ffffff",
+      "backColor": "a2c4db",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "fragBullets": 5,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 7.0,
+        "speed": 4.0,
+        "lifetime": 13.0,
+        "width": 2.5,
+        "height": 4.0,
+        "frontColor": "ffffff",
+        "backColor": "a2c4db"
+      }
+    },
+    "glass-metal-alloy": {
+      "type": "BasicBulletType",
+      "damage": 20.0,
+      "speed": 6.2,
+      "lifetime": 25.0,
+      "width": 7.5,
+      "height": 11.0,
+      "reloadMultiplier": 1.15,
+      "ammoMultiplier": 4,
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "fragBullets": 7,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 17.0,
+        "speed": 4.0,
+        "lifetime": 17.0,
+        "width": 3.0,
+        "height": 5.0,
+        "frontColor": "ffffff",
+        "backColor": "7cb843"
+      }
+    },
+    "zambiy": {
+      "type": "BasicBulletType",
+      "damage": 17.0,
+      "speed": 5.0,
+      "lifetime": 30.0,
+      "width": 7.0,
+      "height": 10.0,
+      "splashDamage": 15.0,
+      "splashDamageRadius": 30.0,
+      "status": "burning",
+      "statusDuration": 60.0,
+      "frontColor": "ffffff",
+      "backColor": "ccd6dd",
+      "ammoMultiplier": 3
+    },
+    "zambit": {
+      "type": "BasicBulletType",
+      "damage": 25.0,
+      "speed": 5.8,
+      "lifetime": 26.0,
+      "width": 8.0,
+      "height": 12.0,
+      "status": "burning",
+      "statusDuration": 100.0,
+      "frontColor": "ffffff",
+      "backColor": "a3ff52",
+      "ammoMultiplier": 4,
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "fragBullets": 5,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 17.0,
+        "speed": 4.0,
+        "lifetime": 12.0,
+        "status": "burning",
+        "width": 3.5,
+        "height": 6.0,
+        "frontColor": "ffffff",
+        "backColor": "a3ff52"
+      }
+    }
+  },
+  
+  "requirements": [
+    { "item": "zambit", "amount": 40 },
+    { "item": "iron-ingot", "amount": 75 },
+    { "item": "metal-glass", "amount": 35 }
+  ],
+  "research": "zambit-mixer",
+  "researchCost": ["zambit/250", "iron-ingot/400"]
+}

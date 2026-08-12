@@ -1,0 +1,67 @@
+{
+  "type": "LiquidTurret",
+  "name": "splash",
+  "localizedName": "Всплеск",
+  "description": "Распыляет раскалённые потоки жидкого металла или другие жидкости по площади. Оказывает мощное термическое давление на группы врагов.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 650,
+  "category": "turret",
+  
+  "range": 130.0,
+  "reload": 5.0,
+  "inaccuracy": 5.0,
+  "shootCone": 25.0,
+  
+  "hasLiquids": true,
+  "liquidCapacity": 20.0,
+  
+  "ammoTypes": {
+    "molten-metal": {
+      "type": "LiquidBulletType",
+      "liquid": "molten-metal",
+      "damage": 22.0,
+      "speed": 4.0,
+      "lifetime": 32.5,
+      "status": "melting",
+      "statusDuration": 180.0,
+      "puddleSize": 8.0,
+      "orbSize": 4.0,
+      "frontColor": "e0592b",
+      "backColor": "7a2ba8"
+    },
+    "water": {
+      "type": "LiquidBulletType",
+      "liquid": "water",
+      "damage": 2.0,
+      "speed": 4.2,
+      "lifetime": 31.0,
+      "status": "wet",
+      "statusDuration": 240.0,
+      "knockback": 1.5,
+      "puddleSize": 6.0,
+      "orbSize": 3.5
+    },
+    "bio-fuel": {
+      "type": "LiquidBulletType",
+      "liquid": "bio-fuel",
+      "damage": 18.0,
+      "speed": 4.5,
+      "lifetime": 28.8,
+      "status": "burning",
+      "statusDuration": 240.0,
+      "puddleSize": 8.0,
+      "orbSize": 4.0,
+      "frontColor": "ffffff",
+      "backColor": "7cb843"
+    }
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 35 },
+    { "item": "metal-glass", "amount": 25 }
+  ],
+  "research": "metal-glass-liquid-router",
+  "researchCost": [ "iron-ingot/700", "metal-glass/500" ]
+}

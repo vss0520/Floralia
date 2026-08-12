@@ -1,0 +1,26 @@
+{
+  "type": "RepairTurret",
+  "name": "iron-repair-point",
+  "localizedName": "Ремонтная точка",
+  "description": "Автоматически наводится на раненых наземных и летающих юнитов в небольшом радиусе, восстанавливая их прочность специальным лучом.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 90,
+  "category": "units",
+  
+  "range": 80.0,
+  "repairSpeed": 1.5,
+  
+  "hasPower": true,
+  "consumes": {
+    "power": 0.5
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 15 },
+    { "item": "metal-glass", "amount": 5 }
+  ],
+  "research": "flora-unit-factory",
+  "researchCost": [ "iron-ingot/150", "metal-glass/50" ]
+}

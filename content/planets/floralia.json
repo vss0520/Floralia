@@ -1,0 +1,57 @@
+{
+  "type": "Planet",
+  "name": "floralia",
+  "localizedName": "Флорария",
+  "description": "Зелёная планета, покрытая густыми лесами и древними скалами.",
+  "parent": "sun",
+  "visible": true,
+  "alwaysUnlocked": true,
+  "hasAtmosphere": true,
+  "drawOrbit": true,
+  "orbitRadius": 22.0,
+  "orbitTime": 480.0,
+  "camRadius": 0.85,
+  "radius": 0.8,
+  "mesh": {
+    "type": "MeshNoise",
+    "divisions": 4,
+    "radius": 0.8,
+    "seed": 105,
+    "mag": 0.6,
+    "coeff": 0.9
+  },
+  "generator": {
+    "type": "SerpuloPlanetGenerator",
+    "allowCurrent": false,
+    "cloudSeed": 412
+  },
+  "atmosphereColor": "2b8b4a",
+  "atmosphereRadIn": 0.02,
+  "atmosphereRadOut": 0.14,
+  "startSector": 0,
+  "sectorSize": 1.0,
+  "clearSectorOnLoss": true,
+  "allowWaveSimulation": true,
+  "precompileSectors": true,
+  "defaultCore": "core-flora",
+  "itemWhitelist": [
+    "stone",
+    "wood",
+    "clay",
+    "metal",
+    "brick",
+    "metal-glass",
+    "metal-ingot",
+    "metal-bolt",
+    "arrow",
+    "fire-arrow",
+    "charcoal",
+    "zambiy",
+    "zambit"
+  ],
+  "liquidWhitelist": [
+    "water",
+    "molten-metal",
+    "bio-fuel"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "type": "PowerTurret",
+  "name": "energy-vortex",
+  "localizedName": "Энергетический Вихрь",
+  "description": "Продвинутая плазменная турель формата 2х2. Потребляет только чистую энергию. Выпускает непрерывный град скорострельных фиолетовых лазерных зарядов из мощного одиночного ствола. Ускоряется водой.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 600,
+  "category": "turret",
+  
+  "range": 140.0,
+  "reload": 7.0,
+  "inaccuracy": 1.5,
+  "shootCone": 25.0,
+  "rotateSpeed": 8.0,
+  
+  "hasPower": true,
+  "hasLiquids": true,
+  "liquidCapacity": 15.0,
+  
+  "consumes": {
+    "power": 5.0,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.08,
+      "booster": true,
+      "boostScale": 3,
+      "optional": true
+    }
+  },
+  
+  "shootType": {
+    "type": "LaserBoltType",
+    "damage": 15.0,
+    "speed": 5.5,
+    "lifetime": 30.0,
+    "width": 2.0,
+    "height": 8.0,
+    "frontColor": "bf69eb",
+    "backColor": "7a2ba8",
+    "hitEffect": "hitLaser",
+    "despawnEffect": "none",
+    "shootSound": "shootMalign",
+  },
+  
+  "requirements": [
+    { "item": "glass-metal-alloy", "amount": 30 },
+    { "item": "metal-glass", "amount": 15 },
+    { "item": "iron-ingot", "amount": 30 }
+  ],
+  "research": "pulsar",
+  "researchCost": ["glass-metal-alloy/100", "iron-ingot/200", "metal-glass/150"]
+}

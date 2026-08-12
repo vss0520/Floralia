@@ -1,0 +1,66 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "flora-steam-generator",
+  "localizedName": "Паровой генератор Флоры",
+  "description": "Мощная тепловая электростанция планеты Floralia. Потребляет воду и уголь для нагрева котлов, а также биотопливо, вырабатывая колоссальное количество энергии.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 3,
+  "health": 640,
+  "category": "power",
+  
+  "hasItems": true,
+  "hasLiquids": true,
+  "liquidCapacity": 40.0,
+  
+  "itemDuration": 120.0,
+  "powerProduction": 17.0,
+  
+  "consumes": {
+    "items": [
+      { "item": "charcoal", "amount": 1 }
+    ],
+    "liquids": [
+      { "liquid": "water", "amount": 0.3 },
+      { "liquid": "bio-fuel", "amount": 0.1 }
+    ]
+  },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water",
+        "targetVolume": 1.0,
+        "suffix": "-liquid"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "bio-fuel",
+        "targetVolume": 0.5,
+        "suffix": "-liquid"
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawCrucibleFlame"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-top",
+        "blending": "additive",
+        "color": "ff9436"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "glass-metal-alloy", "amount": 35 },
+    { "item": "iron-ingot", "amount": 50 },
+    { "item": "brick", "amount": 80 }
+  ],
+  "research": "advanced-charcoal-generator",
+  "researchCost": [ "glass-metal-alloy/150", "iron-ingot/250", "brick/600" ]
+}

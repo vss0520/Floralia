@@ -1,0 +1,16 @@
+{
+  "type": "item",
+  "name": "zambiy",
+  "localizedName": "Замбий",
+  "description": "Серо-белый мелкодисперсный порошок. Обладает критическим уровнем воспламенения и крайне нестабилен при механическом воздействии. Взрывоопасен.",
+  "planet": "floralia",
+  
+  "color": "ccd6dd",
+  "flammability": 1.6,
+  "explosiveness": 1.4,
+  "radioactivity": 0.0,
+  "charge": 0.1,
+  
+  "hardness": 4,
+  "research": "iron-ingot"
+}

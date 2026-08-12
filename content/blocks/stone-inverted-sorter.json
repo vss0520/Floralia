@@ -1,0 +1,20 @@
+{
+  "type": "Sorter",
+  "name": "stone-inverted-sorter",
+  "localizedName": "Каменный инв. сортировщик",
+  "description": "Отправляет выбранный ресурс в стороны, а остальные пропускает строго вперёд. Слегка воспламеняется из-за деревянных деталей.",
+  "planet": "floralia",
+  
+  "invert": true,
+  "size": 1,
+  "health": 60,
+  "flammability": 0.3,
+  
+  "requirements": [
+    { "item": "stone", "amount": 2 },
+    { "item": "wood", "amount": 1 }
+  ],
+  "category": "distribution",
+  "research": "stone-sorter",
+  "researchCost": [ "stone/20", "wood/10" ]
+}

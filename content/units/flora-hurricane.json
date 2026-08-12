@@ -1,0 +1,75 @@
+{
+  "type": "flying",
+  "name": "flora-hurricane",
+  "localizedName": "Ураган Флоры",
+  "description": "Тяжёлый Т3 истребитель-бомбардировщик. Обладает прочным корпусом типа Зенит. Ведёт шквальный огонь зажигательными ракетными очередями, чередуя левое и правое орудие крыла.",
+  "shownPlanets": [ "floralia" ],
+  
+  "flying": true,
+  "health": 2300,
+  "armor": 6,
+  "hitSize": 13.0,
+  "speed": 2.7,
+  "rotateSpeed": 4.5,
+  "accel": 0.1,
+  "drag": 0.08,
+  
+  "lowAltitude": false,
+  "targetAir": true,
+  "targetGround": true,
+  
+  "engineSize": 4.5,
+  "engineOffset": 11.5,
+  
+  "controller": "FlyingAI",
+  "targetFlags": [ "generator", "factory", "core" ],
+  
+  "weapons": [
+    {
+      "name": "hurricane-missile-launcher",
+      "reload": 75.0,
+      "x": 6.0,
+      "y": 2.0,
+      "shootY": 0.0,
+      "mirror": true,
+      "alternate": true,
+      "top": false,
+      "shootSound": "shootMissile",
+      
+      "shoot": {
+        "shots": 6,
+        "shotDelay": 8.0
+      },
+      
+      "bullet": {
+        "type": "MissileBulletType",
+        "damage": 55.0,
+        "speed": 4.0,
+        "lifetime": 35.0,
+        "width": 8.0,
+        "height": 8.0,
+        "shrinkX": 0.0,
+        "shrinkY": 0.0,
+        
+        "splashDamage": 25.0,
+        "splashDamageRadius": 30.0,
+        
+        "homingPower": 0.12,
+        "homingRange": 80.0,
+        
+        "frontColor": "ffffff",
+        "backColor": "ffb360",
+        "trailColor": "ff8400",
+        
+        "status": "burning",
+        "statusDuration": 30.0,
+        "hitEffect": "blastExplosion",
+        "despawnEffect": "none",
+      }
+    }
+  ],
+  "research": {
+    "parent": "flora-fighter",
+    "requirements": ["glass-metal-alloy/450", "zambit/250", "metal-glass/750"]
+  }
+}

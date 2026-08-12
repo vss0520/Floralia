@@ -1,0 +1,27 @@
+{
+  "type": "Battery",
+  "name": "flora-large-battery",
+  "localizedName": "Большой аккумулятор Флоры",
+  "description": "Продвинутый накопитель энергии. Использует структуру из стеклометалла для стабильного хранения колоссальных объемов электричества.",
+  "planet": "floralia",
+  
+  "size": 3,
+  "health": 640,
+  "category": "power",
+  
+  "consumes": {
+    "powerBuffered": 50000.0
+  },
+  
+  "drawer": {
+    "type": "DrawDefault"
+  },
+  
+  "requirements": [
+    { "item": "glass-metal-alloy", "amount": 50 },
+    { "item": "iron-ingot", "amount": 15 },
+    { "item": "metal-glass", "amount": 10 }
+  ],
+  "research": "glass-metal-alloy",
+  "researchCost": [ "glass-metal-alloy/250", "iron-ingot/150", "metal-glass/100" ]
+}

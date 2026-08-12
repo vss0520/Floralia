@@ -1,0 +1,23 @@
+{
+  "type": "Battery",
+  "name": "flora-battery",
+  "localizedName": "Аккумулятор Флоры",
+  "description": "Примитивный накопитель энергии из камня и изоляционных слоев древесины. Стабильно удерживает 1000 единиц заряда.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 80,
+  "category": "power",
+  
+  "consumes": {
+    "powerBuffered": 1000.0
+  },
+  
+  "requirements": [
+    { "item": "wood", "amount": 10 },
+    { "item": "stone", "amount": 5 }
+  ],
+  
+  "research": "flora-power-node",
+  "researchCost": [ "wood/100", "stone/50" ]
+}

@@ -1,0 +1,44 @@
+{
+  "type": "LiquidRouter",
+  "name": "flora-liquid-tank",
+  "localizedName": "Резервуар Флоры",
+  "description": "Компактный резервуар для хранения и распределения жидкостей. Отлично подходит для создания запасов воды или высококалорийного биотоплива.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 380,
+  "category": "liquid",
+  
+  "liquidCapacity": 500.0,
+  "hasLiquids": true,
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquid",
+        "drawLiquid": "water",
+        "suffix": "-liquid"
+      },
+      {
+        "type": "DrawLiquid",
+        "drawLiquid": "bio-fuel",
+        "suffix": "-liquid"
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "metal-glass", "amount": 35 },
+    { "item": "iron-ingot", "amount": 20 }
+  ],
+  "research": "metal-glass-liquid-router",
+  "researchCost": [ "metal-glass/350", "iron-ingot/200" ]
+}

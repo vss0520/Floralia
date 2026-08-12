@@ -1,0 +1,19 @@
+{
+  "type": "Conveyor",
+  "name": "Iron Conveyor",
+  "localizedName": "Металлический конвейер",
+  "description": "Продвинутый скоростной конвейер. Перемещает предметы значительно быстрее титанового аналога.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 175,
+  "category": "distribution",
+  
+  "speed": 0.100,
+  "displayedSpeed": 14.3,
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 2 }
+  ],
+  "research": "iron-ingot",
+  "researchCost": [ "iron-ingot/20" ]
+}

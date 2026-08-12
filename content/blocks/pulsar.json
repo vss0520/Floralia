@@ -1,0 +1,50 @@
+{
+  "type": "PowerTurret",
+  "name": "pulsar",
+  "localizedName": "Пульсар",
+  "description": "Первый прототип лазерного вооружения. Выпускает непрерывную серию коротких лазерных импульсов. Может быть ускорен подачей воды.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 1,
+  "health": 450,
+  "category": "turret",
+  
+  "range": 110.0,
+  "reload": 6.0,
+  "shootCone": 10.0,
+  
+  "hasPower": true,
+  "hasLiquids": true,
+  
+  "consumes": {
+    "power": 2.0,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.05,
+      "booster": true,
+      "boosterScale": 3.0,
+      "optional": true
+    }
+  },
+  
+  "shootType": {
+    "type": "LaserBoltType",
+    "damage": 5.0,
+    "speed": 5.5,
+    "lifetime": 20.0,
+    "width": 2.0,
+    "height": 8.0,
+    "frontColor": "bf69eb",
+    "backColor": "7a2ba8",
+    "hitEffect": "hitLaser",
+    "shootSound": "shootMalign",
+    "despawnEffect": "none"
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 30 },
+    { "item": "metal-glass", "amount": 15 }
+  ],
+  "research": "ballista",
+  "researchCost": [ "iron-ingot/300", "metal-glass/150" ]
+}

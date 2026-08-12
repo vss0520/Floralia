@@ -1,0 +1,16 @@
+{
+  "type": "item",
+  "name": "zambit",
+  "localizedName": "Замбит",
+  "description": "Продвинутый салатовый сплав. Получается путём насыщения нестабильного замбия жидким биотопливом. Обладает высокой прочностью и горючестью, но полностью лишён взрывоопасности.",
+  "planet": "floralia",
+  
+  "color": "a3ff52",
+  "flammability": 1.2,
+  "explosiveness": 0.0,
+  "radioactivity": 0.0,
+  "charge": 0.0,
+  
+  "hardness": 4,
+  "research": "zambiy"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "Wall",
+  "name": "brick-wall",
+  "localizedName": "Кирпичная стена",
+  "description": "Прочная стена из обожжённого кирпича. Не горит и полностью блокирует лазерные лучи.",
+  "shownPlanets": [ "floralia" ],
+  "health": 700,
+  "size": 1,
+  "flashHit": true,
+  "requirements": [
+    "brick/8"
+  ],
+  "category": "defense",
+  "research": "brick",
+  "researchCost": [ "brick/400" ]
+}

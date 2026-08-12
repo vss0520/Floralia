@@ -1,0 +1,54 @@
+{
+  "type": "flying",
+  "name": "flora-fighter",
+  "localizedName": "Истребитель Флоры",
+  "description": "Продвинутый Т2 истребитель-штурмовик. Передвигается на огромной скорости, непрерывно кружа вокруг электросетей противника. Оснащён парными скорострельными пушками.",
+  "shownPlanets": [ "floralia" ],
+  
+  "flying": true,
+  "drag": 0.01,
+  "speed": 3.0,
+  "rotateSpeed": 10.0,
+  "accel": 0.35,
+  "health": 1300,
+  "armor": 2,
+  "hitSize": 10,
+  "itemCapacity": 0,
+  
+  "circleTarget": true,
+  "faceTarget": false,
+  "lowAltitude": true,
+  "targetFlags": [ "generator" ],
+  
+  "weapons": [
+    {
+      "name": "flora-fighter-weapon",
+      "reload": 5.0,
+      "x": 4.5,
+      "y": 1.5,
+      "shootY": 2.5,
+      "mirror": true,
+      "top": false,
+      "recoil": 1.0,
+      "shootCone": 45.0,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 15.0,
+        "speed": 5.5,
+        "lifetime": 22.0,
+        "width": 6.0,
+        "height": 9.0,
+        "frontColor": "ffffff",
+        "backColor": "ffb360",
+        "shootEffect": "shootSmall",
+        "smokeEffect": "none"
+      }
+    }
+  ],
+  
+  "controller": "FlyingAI",
+  "research": {
+    "parent": "flora-bomber",
+    "requirements": ["metal-glass/500", "iron-ingot/350"]
+  }
+}

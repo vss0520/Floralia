@@ -1,0 +1,17 @@
+{
+  "type": "OverflowGate",
+  "name": "stone-overflow-gate",
+  "localizedName": "Каменный избыточный затвор",
+  "description": "Пропускает ресурсы вперёд. Если путь впереди заблокирован, перенаправляет их в боковые стороны. Обладает хорошей прочностью.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 60,
+  
+  "requirements": [
+    { "item": "stone", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "stone-router",
+  "researchCost": [ "stone/20" ]
+}

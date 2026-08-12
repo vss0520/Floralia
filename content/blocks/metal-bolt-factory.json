@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "metal-bolt-factory",
+  "localizedName": "Завод металлических болтов",
+  "description": "Штампует тяжелые и прочные металлические болты из чистых железных слитков с помощью мощных гидравлических прессов.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 350,
+  "hasItems": true,
+  "category": "crafting",
+  
+  "craftTime": 40.0,
+  
+  "consumes": {
+    "power": 2.0,
+    "items": [
+      { "item": "iron-ingot", "amount": 1 }
+    ]
+  },
+  
+  "outputItem": { "item": "metal-bolt", "amount": 2 },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "blending": "additive",
+        "color": "bf69eb"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 25 },
+    { "item": "metal-glass", "amount": 15 },
+    { "item": "brick", "amount": 40 }
+  ],
+  "research": "iron-ingot",
+  "researchCost": [ "iron-ingot/250", "metal-glass/150", "brick/400" ]
+}

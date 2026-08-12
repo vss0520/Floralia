@@ -1,0 +1,21 @@
+{
+  "type": "SolarGenerator",
+  "name": "flora-solar-panel",
+  "localizedName": "Солнечник",
+  "description": "Продвинутая фотоэлектрическая панель планеты Floralia. Использует стеклометалл для повышения эффективности сбора света в полтора раза.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 1,
+  "health": 120,
+  "category": "power",
+  
+  "powerProduction": 0.15,
+  
+  "requirements": [
+    { "item": "metal-glass", "amount": 10 },
+    { "item": "glass-metal-alloy", "amount": 7 },
+    { "item": "iron-ingot", "amount": 5 }
+  ],
+  "research": "glass-metal-alloy",
+  "researchCost": [ "metal-glass/100", "glass-metal-alloy/70", "iron-ingot/50" ]
+}

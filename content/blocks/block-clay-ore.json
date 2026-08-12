@@ -1,0 +1,13 @@
+{
+  "type": "OreBlock",
+  "name": "block-clay-ore",
+  "localizedName": "Глиняная почва",
+  "variants": 3,
+  "itemDrop": "clay",
+  "playerUnmineable": false,
+  "oreScale": 24.0,
+  "autotile": false,
+  "attributes": {
+    "heat": -0.1
+  }
+}

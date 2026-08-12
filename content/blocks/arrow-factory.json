@@ -1,0 +1,37 @@
+{
+  "type": "GenericCrafter",
+  "name": "arrow-factory",
+  "localizedName": "Завод стрел",
+  "description": "Производит стрелы из дерева и камня. Из-за трения при обработке древесины есть риск возгорания.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 150,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftTime": 60.0,
+  "flammability": 0.3,
+  
+  "liquids": [],
+  "consumes": {
+    "items": [
+      { "item": "wood", "amount": 2 },
+      { "item": "stone", "amount": 1 }
+    ]
+  },
+  
+  "outputItem": { "item": "arrow", "amount": 3 },
+  
+  "craftEffect": "smoke",
+  "ambientSound": "crusher",
+  "ambientSoundVolume": 0.04,
+  
+  "requirements": [
+    { "item": "stone", "amount": 70 },
+    { "item": "wood", "amount": 30 }
+  ],
+  
+  "category": "crafting",
+  "research": "wood-conveyor",
+  "researchCost": [ "stone/350", "wood/300" ]
+}

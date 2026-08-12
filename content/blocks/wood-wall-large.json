@@ -1,0 +1,19 @@
+{
+  "type": "Wall",
+  "name": "wood-wall-large",
+  "localizedName": "Большая деревянная стена",
+  "description": "Усиленный вариант деревянной стены. За счет высокого содержания древесины представляет серьезную пожарную опасность.",
+  "planet": "floralia",
+  
+  "size": 2,
+  "health": 1000,
+  "flammability": 0.8,
+  "category": "defense",
+  
+  "requirements": [
+    { "item": "wood", "amount": 24 }
+  ],
+  
+  "research": "wood-wall",
+  "researchCost": [ "wood/900" ]
+}

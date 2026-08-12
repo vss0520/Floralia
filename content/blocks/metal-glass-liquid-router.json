@@ -1,0 +1,21 @@
+{
+  "type": "LiquidRouter",
+  "name": "Metal Glass Liquid Router",
+  "localizedName": "Жидкостный распределитель",
+  "description": "Равномерно распределяет поступающие жидкости по всем доступным направлениям. Имеет внутренний резервуар.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 1,
+  "health": 60,
+  "category": "liquid",
+  
+  "liquidCapacity": 20.0,
+  "underflow": false,
+  
+  "requirements": [
+    { "item": "metal-glass", "amount": 2 },
+    { "item": "stone", "amount": 4 }
+  ],
+  "research": "metal-glass-conduit",
+  "researchCost": [ "metal-glass/20", "stone/40" ]
+}

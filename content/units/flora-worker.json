@@ -1,0 +1,47 @@
+{
+  "type": "flying",
+  "name": "flora-worker",
+  "localizedName": "Дрон: Светлячок",
+  "description": "Стартовый летающий строительный дрон Флорарии. Умеет возводить здания, лечить постройки и собирать камень. Доступен по умолчанию.",
+  
+  "flying": true,
+  "alwaysUnlocked": true,
+  "drag": 0.05,
+  "speed": 3.5,
+  "rotateSpeed": 15.0,
+  "accel": 0.1,
+  "itemCapacity": 30,
+  "health": 170,
+  "engineSize": 1.8,
+  "engineOffset": 4.5,
+  "hitSize": 8,
+  
+  "coreUnitDock": true,
+  "controller": "BuilderAI",
+  "defaultController": "BuilderAI",
+  "mineTier": 1,
+  "mineSpeed": 1.5,
+  "buildSpeed": 0.8,
+  
+  "weapons": [
+    {
+      "name": "flora-laser",
+      "reload": 20,
+      "x": 0,
+      "y": 2,
+      "top": false,
+      "mirror": false,
+      "bullet": {
+        "type": "LaserBoltBulletType",
+        "speed": 5.2,
+        "damage": 5,
+        "buildingDamageMultiplier": 0.05,
+        "healPercent": 1.0,
+        "collidesTeam": true,
+        "frontColor": "a7f5a7",
+        "backColor": "2b8b4a",
+        "lifetime": 25
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "item",
+  "name": "metal",
+  "localizedName": "Металл",
+  "shownPlanets": [ "floralia" ],
+  "description": "Базовый технический металл. Используется для создания сложных конструкций и механизмов.",
+  "hardness": 3,
+  "cost": 1.0,
+  "color": "989aa6",
+  "research": "clay"
+}

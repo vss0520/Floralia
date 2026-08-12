@@ -1,0 +1,42 @@
+{
+  "type": "WallCrafter",
+  "name": "wood-crusher",
+  "localizedName": "измельчитель  дерева",
+  "planet": "floralia",
+  "description": "Маленький бур 1х1. Надежно добывает древесину без ошибок.",
+  "size": 1,
+  "drillTime": 260,
+  "attribute": "wood_source",
+  "output": "wood",
+  "consumePower": false,
+  "hasItems": true,
+  "itemCapacity": 10,
+  
+  "craftEffect": "none",
+  "updateEffect": "none",
+  "updateEffectChance": 0.0,
+  
+  "requirements": [
+    { "item": "stone", "amount": 20 }
+  ],
+  "category": "production",
+  "research": "stone",
+  "researchCost": [ "stone/100" ],
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRotator",
+        "suffix": "-rotator",
+        "speed": 3.0
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  }
+}

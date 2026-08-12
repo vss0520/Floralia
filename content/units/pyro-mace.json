@@ -1,0 +1,58 @@
+{
+  "type": "mech",
+  "name": "pyro-mace",
+  "localizedName": "Огненная булава",
+  "description": "Тяжелый шагоход Т2 уровня. Обладает абсолютным иммунитетом к огню. Оснащен двумя бортовыми мортирами, ведущими размеренный огонь крупными зажигательными снарядами.",
+  "shownPlanets": [ "floralia" ],
+  
+  "speed": 0.55,
+  "drag": 0.4,
+  "hitSize": 13.0,
+  "rotateSpeed": 3.0,
+  "health": 1300,
+  "armor": 4.0,
+  
+  "immunities": [
+    "burning"
+  ],
+  
+  "weapons": [
+    {
+      "name": "pyro-mace-weapon",
+      "reload": 55.0,
+      "x": 6.5,
+      "y": 0.5,
+      "mirror": true,
+      "top": false,
+      "shootSound": "shootArtillery",
+      
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 125.0,
+        "speed": 2.5,
+        "lifetime": 64.0,
+        
+        "width": 14.0,
+        "height": 18.0,
+        "sprite": "missile",
+        
+        "frontColor": "ffb360",
+        "backColor": "d9511e",
+        
+        "status": "burning",
+        "statusDuration": 180.0,
+        
+        "trailColor": "ff9436",
+        "trailWidth": 3.0,
+        "trailLength": 12,
+        
+        "hitEffect": "fireHit",
+        "despawnEffect": "fireHit",
+      }
+    }
+  ],
+  "research": {
+    "parent": "pyro-dagger",
+    "requirements": ["iron-ingot/400", "metal-glass/300"]
+  }
+}

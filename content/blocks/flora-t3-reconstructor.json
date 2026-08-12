@@ -1,0 +1,45 @@
+{
+  "type": "Reconstructor",
+  "name": "flora-t3-reconstructor",
+  "localizedName": "Мультипликативный реконструктор Т3",
+  "description": "Крупный машиностроительный комплекс формата 5х5. Модернизирует Т2 юнитов Floralia до мощного Т3 тира. Для работы требует стабильную подачу энергии и жидкого биотоплива.",
+  "planet": "floralia",
+  "size": 5,
+  "health": 1400,
+  "category": "units",
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "itemCapacity": 30,
+  "liquidCapacity": 60.0,
+  "constructTime": 1800.0,
+  "consumes": {
+    "power": 18.0,
+    "items": [
+      { "item": "zambit", "amount": 75 },
+      { "item": "glass-metal-alloy", "amount": 100 },
+      { "item": "metal-glass", "amount": 150 },
+      { "item": "iron-ingot", "amount": 170 },
+  ],
+    "liquid": {
+      "liquid": "bio-fuel",
+      "amount": 0.8
+    }
+  },
+  "upgrades": [
+    [ "extraction", "fragment" ],
+    [ "pyro-mace", "pyro-fortress" ],
+    [ "kvado", "renucho" ],
+    [ "vospolneniya", "synthesis" ],
+    [ "flora-fighter", "flora-hurricane" ],
+    [ "delta", "atlant" ]
+  ],
+  "requirements": [
+    { "item": "zambit", "amount": 150 },
+    { "item": "glass-metal-alloy", "amount": 170 },
+    { "item": "metal-glass", "amount": 250 },
+    { "item": "iron-ingot", "amount": 325 },
+  ],
+  "research": "flora-reconstructor",
+  "researchCost": ["zambit/500", "glass-metal-alloy/600", "metal-glass/700", "iron-ingot/750"]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "ItemBridge",
+  "name": "stone-bridge",
+  "localizedName": "Каменный мостовой конвейер",
+  "description": "Позволяет перебрасывать ресурсы по воздуху над другими постройками и конвейерами на расстояние до 4 клеток.",
+  "planet": "floralia",
+  
+  "size": 1,
+  "health": 70,
+  "range": 4,
+  "transportTime": 4.0,
+  "hasItems": true,
+  "itemCapacity": 10,
+  
+  "requirements": [
+    { "item": "stone", "amount": 8 }
+  ],
+  "category": "distribution",
+  "research": "stone-junction",
+  "researchCost": [ "stone/80" ]
+}

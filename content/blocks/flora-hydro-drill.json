@@ -1,0 +1,34 @@
+{
+  "type": "Drill",
+  "name": "flora-hydro-drill",
+  "localizedName": "Гидро-бур",
+  "description": "Продвинутый гидравлический бур планеты Floralia. Использует мощные водяные струи под высоким давлением и электрические приводы для быстрой добычи твердых пород.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 3,
+  "health": 420,
+  "category": "production",
+  
+  "hasPower": true,
+  "hasLiquids": true,
+  "liquidCapacity": 30.0,
+  
+  "drillTime": 240.0,
+  "tier": 4,
+  
+  "consumes": {
+    "power": 1.0,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.05
+    }
+  },
+  
+  "requirements": [
+    { "item": "glass-metal-alloy", "amount": 30 },
+    { "item": "iron-ingot", "amount": 40 },
+    { "item": "metal-glass", "amount": 25 }
+  ],
+  "research": "glass-metal-alloy",
+  "researchCost": [ "glass-metal-alloy/300", "iron-ingot/400", "metal-glass/250" ]
+}

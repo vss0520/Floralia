@@ -1,0 +1,113 @@
+{
+  "type": "ItemTurret",
+  "name": "Ballista",
+  "localizedName": "Баллиста",
+  "description": "Массивное осадное орудие. Использует стрелы и тяжелые болты, выпуская их с огромной силой на дальние дистанции.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 3,
+  "health": 900,
+  "category": "turret",
+  
+  "reload": 220.0,
+  "range": 320.0,
+  
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "suffix": "-arrow",
+        "under": false,
+        "progress": "reload",
+        "y": 0.0,
+        "x": 0.0,
+        "drawRegion": true,
+        "colorTo": "ffffff00",
+        "mixColorTo": "ffffff00"
+      }
+    ]
+  },
+  
+  "ammoTypes": {
+    "arrow": {
+      "type": "BasicBulletType",
+      "damage": 75.0,
+      "buildingDamageMultiplier": 0.3,
+      "speed": 9.0,
+      "lifetime": 36.0,
+      "width": 6.0,
+      "height": 22.0,
+      "shrinkY": 0.0,
+      "shootSound": "shootAfflict",
+      
+      "homingPower": 0.08,
+      "homingRange": 70.0,
+      
+      "pierce": true,
+      "pierceCap": 2,
+      "ammoMultiplier": 1
+    },
+    "fire-arrow": {
+      "type": "BasicBulletType",
+      "damage": 100.0,
+      "buildingDamageMultiplier": 0.3,
+      "speed": 9.0,
+      "lifetime": 36.0,
+      "width": 7.0,
+      "height": 22.0,
+      "shrinkY": 0.0,
+      "sprite": "missile",
+      "shootSound": "shootAfflict",
+      
+      "frontColor": "ffb360",
+      "backColor": "d9511e",
+      
+      "homingPower": 0.08,
+      "homingRange": 70.0,
+      
+      "status": "burning",
+      "statusDuration": 180.0,
+      
+      "trailColor": "ff9436",
+      "trailWidth": 2.5,
+      "trailLength": 12,
+      
+      "hitEffect": "fireHit",
+      "despawnEffect": "fireHit",
+      
+      "pierce": true,
+      "pierceCap": 3,
+      "ammoMultiplier": 1
+    },
+    "metal-bolt": {
+      "type": "BasicBulletType",
+      "damage": 150.0,
+      "buildingDamageMultiplier": 0.3,
+      "speed": 10.0,
+      "lifetime": 32.0,
+      "width": 7.5,
+      "height": 24.0,
+      "shrinkY": 0.0,
+      "sprite": "missile",
+      "shootSound": "shootAfflict",
+      
+      "frontColor": "b0b2c1",
+      "backColor": "696a75",
+      
+      "pierce": true,
+      "pierceCap": 5,
+      "ammoMultiplier": 2,
+      
+      "hitEffect": "hitBulletBig",
+      "despawnEffect": "hitBulletBig"
+    }
+  },
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 70 },
+    { "item": "wood", "amount": 30 },
+    { "item": "brick", "amount": 50 }
+  ],
+  "research": "iron-ingot",
+  "researchCost": [ "iron-ingot/350", "wood/300", "brick/500" ]
+}

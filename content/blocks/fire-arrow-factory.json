@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "fire-arrow-factory",
+  "localizedName": "Завод огненных стрел",
+  "description": "Производит зажигательные боеприпасы для оборонительных турелей. Прессует камень, древесину и высококалорийный уголь под действием энергии.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 320,
+  "hasItems": true,
+  "category": "crafting",
+  
+  "craftTime": 45.0,
+  
+  "consumes": {
+    "power": 1.0,
+    "items": [
+      { "item": "wood", "amount": 2 },
+      { "item": "charcoal", "amount": 1 }
+    ]
+  },
+  
+  "outputItem": { "item": "fire-arrow", "amount": 3 },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "blending": "additive",
+        "color": "ff9436"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "brick", "amount": 30 },
+    { "item": "metal-glass", "amount": 10 }
+  ],
+  "research": "bow",
+  "researchCost": [ "brick/300", "metal-glass/100" ]
+}

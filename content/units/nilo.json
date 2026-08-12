@@ -1,0 +1,61 @@
+{
+  "type": "naval",
+  "name": "nilo",
+  "localizedName": "Нило",
+  "description": "Начальный Т1 артиллерийский корабль Floralia. Способен передвигаться только по воде. Идеально слушается команд игрока. Оснащён лёгкой мортирой для обстрела через стены.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 950,
+  "armor": 2,
+  "hitSize": 9.0,
+  "speed": 0.85,
+  "rotateSpeed": 4.0,
+  "drag": 0.13,
+  
+  "trailLength": 15,
+  "trailX": 0.0,
+  "trailY": -4.0,
+  "trailWidth": 1.5,
+  
+  "targetAir": false,
+  "targetGround": true,
+  "faceTarget": false,
+  
+  "controller": "BuilderAI",
+  "isCounted": true, 
+  "weapons": [
+    {
+      "name": "nilo-mortar",
+      "reload": 50.0,
+      "x": 0.0,
+      "y": -1.0,
+      "shootY": 3.0,
+      "mirror": false,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 5.0,
+      "shootSound": "shootArtillery",
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "damage": 75.0,
+        "speed": 3.0,
+        "lifetime": 45.0,
+        "width": 7.0,
+        "height": 7.0,
+        "splashDamage": 45.0,
+        "splashDamageRadius": 30.0,
+        "frontColor": "ffffff",
+        "backColor": "ffb360",
+        "trailColor": "ff8400",
+        "trailWidth": 2.0,
+        "trailLength": 6,
+        "hitEffect": "blastExplosion",
+        "despawnEffect": "none",
+      }
+    }
+  ],
+  "research": {
+    "parent": "flora-naval-factory",
+    "requirements": ["iron-ingot/170", "metal-glass/250"]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "item",
+  "name": "Charcoal",
+  "localizedName": "Древесный уголь",
+  "shownPlanets": [ "floralia" ],
+  "description": "Продукт переработки древесины. Горит гораздо эффективнее обычного дерева.",
+  "planet": "floralia",
+  "cost": 1.0,
+  "color": "2b2b2b",
+  "flammability": 1.0,
+  "explosiveness": 0.0,
+  "radioactivity": 0.0,
+  "charge": 0.0,
+  "research": "charcoal-kiln"
+}

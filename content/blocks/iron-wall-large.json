@@ -1,0 +1,20 @@
+{
+  "type": "Wall",
+  "name": "Large Iron Wall",
+  "localizedName": "Большая железная стена",
+  "description": "Огромная бронированная стена, защищающая большие площади. Полностью поглощает враждебные лазерные лучи.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 2,
+  "health": 4500,
+  "category": "defense",
+  
+  "absorbLasers": true,
+  
+  "requirements": [
+    { "item": "iron-ingot", "amount": 50 },
+    { "item": "metal-glass", "amount": 25 }
+  ],
+  "research": "iron-wall",
+  "researchCost": [ "iron-ingot/900", "metal-glass/450" ]
+}

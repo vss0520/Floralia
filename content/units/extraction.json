@@ -1,0 +1,62 @@
+{
+  "type": "legs",
+  "name": "extraction",
+  "localizedName": "Извлечение",
+  "description": "Тяжелый четырехногий шагоход Т2 уровня. Способен переступать через стены и рельеф. Ведет поочередный огонь из двух вампирских пушек, временно истощая боевую мощь врагов при попадании.",
+  "shownPlanets": [ "floralia" ],
+  
+  "speed": 0.5,
+  "drag": 0.4,
+  "hitSize": 13.0,
+  "rotateSpeed": 2.5,
+  "health": 1500,
+  "armor": 3.0,
+  
+  "legCount": 4,
+  "legLength": 10.0,
+  "legForwardScl": 0.6,
+  "legMoveSpace": 1.4,
+  "hovering": true,
+  
+  "shadowElevation": 0.2,
+  
+  "weapons": [
+    {
+      "name": "purple-cannon",
+      "reload": 25.0,
+      "x": 5.5,
+      "y": 2.0,
+      "mirror": true,
+      "top": true,
+      "shootSound": "shootArtillery",
+      
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 50.0,
+        "speed": 3.5,
+        "lifetime": 45.7,
+        
+        "width": 10.0,
+        "height": 10.0,
+        "shrinkY": 0.0,
+        "sprite": "circle",
+        
+        "frontColor": "bf69eb",
+        "backColor": "7a2ba8",
+        
+        "heals": true,
+        "healPercent": 4.0,
+        
+        "status": "sapped",
+        "statusDuration": 180.0,
+        
+        "despawnEffect": "hitBulletSmall",
+        "hitEffect": "hitBulletSmall"
+      }
+    }
+  ],
+  "research": {
+    "parent": "purple-walcer",
+    "requirements": [ "metal-glass/300", "iron-ingot/450" ]
+  }
+}

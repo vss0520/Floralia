@@ -1,0 +1,20 @@
+{
+  "type": "liquid",
+  "name": "bio-fuel",
+  "localizedName": "Биотопливо",
+  "description": "Высококалорийное жидкое горючее, полученное путём глубокой переработки древесины. Огнеопасно.",
+  "shownPlanets": [ "floralia" ],
+  
+  "color": "7cb843",
+  "barColor": "7cb843",
+  "lightColor": "98ff9844",
+  
+  "flammability": 1.4,
+  "temperature": 0.4,
+  "heatCapacity": 0.2,
+  "viscosity": 0.6,
+  "explosiveness": 0.5,
+  "gas": false,
+  
+  "effect": "melting"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "item",
+  "name": "arrow",
+  "localizedName": "Стрела",
+  "shownPlanets": [ "floralia" ],
+  "description": "Базовый боеприпас, изготовленный из дерева и наконечника из камня.",
+  "cost": 1.0,
+  "color": "989aa4",
+  "flammability": 0.2,
+  "explosiveness": 0.0,
+  "radioactivity": 0.0,
+  "charge": 0.0,
+  "research": "arrow-factory"
+}

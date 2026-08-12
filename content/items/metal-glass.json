@@ -1,0 +1,13 @@
+{
+  "name": "Metal Glass",
+  "localizedName": "Металлостекло",
+  "shownPlanets": [ "floralia" ],
+  "description": "Прочный композитный материал. Используется для продвинутой логистики и очистки жидкостей.",
+  "planet": "floralia",
+  "color": "a7cbe3",
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "hardness": 2,
+  "cost": 2.0,
+  "research": "metal-glass-kiln"
+}

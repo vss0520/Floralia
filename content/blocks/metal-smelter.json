@@ -1,0 +1,60 @@
+{
+  "type": "GenericCrafter",
+  "name": "Metal Smelter",
+  "localizedName": "Плавильный завод",
+  "description": "Плавит сырую металлическую руду в раскаленный жидкий металл с помощью мощных электропечей.",
+  "shownPlanets": [ "floralia" ],
+  
+  "size": 3,
+  "health": 480,
+  "hasItems": true,
+  "hasLiquids": true,
+  "category": "crafting",
+  
+  "craftTime": 30.0,
+  
+  "consumes": {
+    "power": 2.0,
+    "items": [
+      { "item": "metal", "amount": 1.5 }
+    ]
+  },
+  
+  "outputLiquid": { "liquid": "molten-metal", "amount": 0.2 },
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "molten-metal",
+        "targetVolume": 1.0,
+        "suffix": "-liquid"
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "blending": "additive",
+        "color": "e0592b"
+      },
+      {
+        "type": "DrawTop"
+      }
+    ]
+  },
+  
+  "requirements": [
+    { "item": "metal-glass", "amount": 25 },
+    { "item": "brick", "amount": 50 },
+    { "item": "clay", "amount": 80 }
+  ],
+  "research": "metal-glass",
+  "researchCost": [ "metal-glass/250", "brick/500", "clay/800" ]
+}

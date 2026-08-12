@@ -1,0 +1,67 @@
+{
+  "type": "mech",
+  "name": "kvado",
+  "localizedName": "Квадо",
+  "description": "Продвинутый Т2 шагоход поддержки Floralia. Защищает армию усиленным куполом-щитом и мощным полем регенерации. Оснащён одной тяжёлой центральной лазерной пушкой.",
+  "shownPlanets": [ "floralia" ],
+  
+  "health": 1300,
+  "armor": 3,
+  "hitSize": 11.0,
+  "speed": 0.48,
+  "rotateSpeed": 4.2,
+  "drag": 0.4,
+  "buildSpeed": 1.4,
+  
+  "mechFrontSway": 0.6,
+  "mechSideSway": 0.5,
+  
+  "targetAir": true,
+  "targetGround": true,
+  
+  "controller": "BuilderAI",
+  "isCounted": false,
+  
+  "abilities": [
+    {
+      "type": "ForceFieldAbility",
+      "radius": 60.0,
+      "regen": 0.4,
+      "max": 300.0,
+      "cooldown": 180.0
+    },
+    {
+      "type": "RepairFieldAbility",
+      "amount": 10.0,
+      "reload": 60.0,
+      "range": 70.0
+    }
+  ],
+  "weapons": [
+    {
+      "name": "kvado-heavy-laser",
+      "reload": 55.0,
+      "x": 0.0,
+      "y": 2.0,
+      "shootY": 3.0,
+      "mirror": false,
+      "top": true,
+      "shootSound": "shootLancer",
+      "bullet": {
+        "type": "LaserBulletType",
+        "damage": 75.0,
+        "healPercent": 1.0,
+        "collidesTeam": true,
+        "length": 120.0,
+        "width": 8.5,
+        "colors": [ "5cff5c", "b2ffb2", "ffffff" ],
+        "hitEffect": "hitLaser",
+        "despawnEffect": "none",
+      }
+    }
+  ],
+  "research": {
+    "parent": "lincho",
+    "requirements": ["glass-metal-alloy/170", "iron-ingot/300", "metal-glass/250"]
+  }
+}

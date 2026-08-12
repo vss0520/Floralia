@@ -1,0 +1,50 @@
+{
+  "type": "flying",
+  "name": "flora-bomber",
+  "localizedName": "Взрывник Флоры",
+  "description": "Летающий дрон-камикадзе. Использует маневренность Вспышки для поиска энергетических узлов противника. Инициирует таранный рывок при сближении.",
+  "shownPlanets": [ "floralia" ],
+  
+  "flying": true,
+  "drag": 0.04,
+  "speed": 3.0,
+  "rotateSpeed": 10.0,
+  "accel": 0.25,
+  "health": 500,
+  "armor": 0,
+  "hitSize": 7,
+  "itemCapacity": 0,
+  
+  "targetFlags": [ "generator" ],
+  
+  "weapons": [
+    {
+      "reload": 30.0,
+      "shootCone": 360.0,
+      "range": 32.0,
+      "mirror": false,
+      "dashAttack": true,
+      "shootSound": "explosion",
+      "x": 0,
+      "y": 0,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 0,
+        "speed": 1.0,
+        "lifetime": 1.0,
+        "killShooter": true,
+        "hitEffect": "explosion",
+        "despawnEffect": "explosion",
+        "splashDamage": 400.0,
+        "splashDamageRadius": 35.0,
+        "instantDisappear": true
+      }
+    }
+  ],
+  
+  "controller": "FlyingAI",
+  "research": {
+    "parent": "flora-air-factory",
+    "requirements": ["charcoal/50", "iron-ingot/150"]
+  }
+}
