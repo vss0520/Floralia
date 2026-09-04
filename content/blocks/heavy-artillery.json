@@ -24,14 +24,11 @@
   "liquidCapacity": 20.0,
   
   "consumes": {
-    "liquid": {
-      "liquid": "water",
-      "amount": 0.12,
-      "booster": true,
-      "boostScale": 2.5,
-      "optional": true
+  "coolant": {
+    "amount": 0.15
     }
   },
+  "coolantMultiplier": 10,
   
   "ammoTypes": {
     "charcoal": {

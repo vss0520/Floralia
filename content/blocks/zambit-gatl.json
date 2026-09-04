@@ -17,6 +17,13 @@
   "recoil": 1.5,
   "shake": 1.0,
   
+  "consumes": {
+  "coolant": {
+    "amount": 0.10
+    }
+  },
+  "coolantMultiplier": 15,
+  
   "ammoTypes": {
     "iron-ingot": {
       "type": "BasicBulletType",

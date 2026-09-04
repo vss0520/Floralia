@@ -1,0 +1,180 @@
+{
+  "type": "ItemTurret",
+  "name": "pompa",
+  "localizedName": "Помповый дробовик",
+  "description": "Ближняя турель 2x2. Стреляет веером дроби и ускоряется водой.",
+  "shownPlanets": ["floralia"],
+
+  "size": 2,
+  "health": 640,
+  "category": "turret",
+
+  "range": 125,
+  "reload": 65,
+  "inaccuracy": 8,
+  "shootCone": 25,
+  "rotateSpeed": 8,
+  "recoil": 2,
+  "shake": 1,
+
+  "hasLiquids": true,
+  "liquidCapacity": 15,
+
+  "consumes": {
+  "coolant": {
+    "amount": 0.10
+    }
+  },
+  "coolantMultiplier": 10,
+
+  "shoot": {
+    "type": "ShootSpread",
+    "shots": 9,
+    "spread": 1
+  },
+
+  "ammoTypes": {
+
+    "stone": {
+      "type": "BasicBulletType",
+      "damage": 10,
+      "speed": 5,
+      "lifetime": 25,
+      "width": 4,
+      "height": 6,
+      "frontColor": "ffffff",
+      "backColor": "989aa4",
+      "shootSound": "shootDiffuse"
+    },
+
+    "metal-glass": {
+      "type": "BasicBulletType",
+      "damage": 15,
+      "speed": 5,
+      "lifetime": 25,
+      "width": 4,
+      "height": 6,
+      "frontColor": "ffffff",
+      "backColor": "a2c4db",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootSound": "shootDiffuse",
+      "fragBullets": 1,
+      "fragOnHit": true,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "speed": 4,
+        "lifetime": 12,
+        "width": 2.5,
+        "height": 4,
+        "frontColor": "ffffff",
+        "backColor": "a2c4db"
+      }
+    },
+
+    "iron-ingot": {
+      "type": "BasicBulletType",
+      "damage": 17,
+      "speed": 5,
+      "lifetime": 25,
+      "width": 5,
+      "height": 8,
+      "frontColor": "ffffff",
+      "backColor": "b0bac0",
+      "shootSound": "shootDiffuse"
+    },
+
+    "glass-metal-alloy": {
+      "type": "BasicBulletType",
+      "damage": 17,
+      "speed": 5.5,
+      "lifetime": 25,
+      "width": 5,
+      "height": 8,
+      "frontColor": "ffffff",
+      "backColor": "7cb843",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootSound": "shootDiffuse",
+      "fragBullets": 2,
+      "fragOnHit": true,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 17,
+        "speed": 4.2,
+        "lifetime": 15,
+        "width": 3,
+        "height": 5,
+        "frontColor": "ffffff",
+        "backColor": "7cb843"
+      }
+    },
+
+    "zambiy": {
+      "type": "BasicBulletType",
+      "damage": 10,
+      "speed": 5,
+      "lifetime": 25,
+      "width": 5,
+      "height": 7,
+      "splashDamage": 25,
+      "splashDamageRadius": 5,
+      "frontColor": "ffffff",
+      "backColor": "ccd6dd",
+      "shootSound": "shootDiffuse"
+    },
+
+    "zambit": {
+      "type": "BasicBulletType",
+      "damage": 15,
+      "speed": 5.5,
+      "lifetime": 25,
+      "width": 5,
+      "height": 8,
+      "status": "burning",
+      "statusDuration": 120,
+      "frontColor": "ffffff",
+      "backColor": "a3ff52",
+      "hitEffect": "none",
+      "despawnEffect": "none",
+      "shootSound": "shootDiffuse",
+      "fragBullets": 2,
+      "fragOnHit": true,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 15,
+        "speed": 4,
+        "lifetime": 12,
+        "status": "burning",
+        "statusDuration": 60,
+        "width": 3,
+        "height": 5,
+        "frontColor": "ffffff",
+        "backColor": "a3ff52"
+      }
+    }
+  },
+
+  "requirements": [
+    {
+      "item": "brick",
+      "amount": 25
+    },
+    {
+      "item": "glass-metal-alloy",
+      "amount": 30
+    },
+    {
+      "item": "iron-ingot",
+      "amount": 50
+    }
+  ],
+
+  "research": "shotgun",
+  "researchCost": [
+    "brick/150",
+    "glass-metal-alloy/100",
+    "iron-ingot/200"
+  ]
+}

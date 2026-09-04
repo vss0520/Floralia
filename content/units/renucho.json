@@ -5,9 +5,11 @@
   "description": "Тяжёлый осадный мех поддержки Т3. Защищает армию колоссальным куполом-щитом и мощным двойным полем регенерации, стремительно латающим любые повреждения союзников.",
   "shownPlanets": [ "floralia" ],
   
-  "health": 2300,
+  "health": 3500,
   "armor": 8,
   "hitSize": 16.0,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "speed": 0.42,
   "rotateSpeed": 3.5,
   "drag": 0.4,
@@ -25,10 +27,10 @@
   "abilities": [
     {
       "type": "ForceFieldAbility",
-      "radius": 90.0,
-      "regen": 0.6,
-      "max": 600.0,
-      "cooldown": 240.0
+      "radius": 50.0,
+      "regen": 0.1,
+      "max": 1000.0,
+      "cooldown": 400.0
     },
     {
       "type": "RepairFieldAbility",
@@ -50,7 +52,7 @@
       "shootSound": "shootLancer",
       "bullet": {
         "type": "LaserBulletType",
-        "damage": 175.0,
+        "damage": 225.0,
         "healPercent": 1.0,
         "collidesTeam": true,
         "length": 160.0,

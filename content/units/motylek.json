@@ -6,18 +6,21 @@
   "shownPlanets": [ "floralia" ],
   
   "flying": true,
-  "mineSpeed": 5.0,
+  "mineSpeed": 3.0,
   "mineTier": 3,
-  "buildSpeed": 1.8,
+  "buildSpeed": 3,
+  "unitCoreDock": true,
   
   "drag": 0.05,
   "speed": 4.2,
   "rotateSpeed": 14.0,
   "accel": 0.2,
   
-  "health": 200,
+  "health": 700,
   "armor": 2,
   "hitSize": 6.5,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "itemCapacity": 50,
   "isCounted": false,
   
@@ -32,7 +35,7 @@
       "top": false,
       "bullet": {
         "type": "LaserBoltType",
-        "damage": 17.0,
+        "damage": 20.0,
         "buildingDamageMultiplier": 0.05,
         "healPercent": 1.0,
         "collidesTeam": true,

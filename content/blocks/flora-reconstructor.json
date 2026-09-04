@@ -20,8 +20,8 @@
     "power": 5.0,
     "items": [
       { "item": "glass-metal-alloy", "amount": 80 },
-      { "item": "iron-ingot", "amount": 20 },
-      { "item": "metal-glass", "amount": 10 }
+      { "item": "iron-ingot", "amount": 40 },
+      { "item": "metal-glass", "amount": 30 }
     ],
     "liquid": {
       "liquid": "water",
@@ -33,6 +33,7 @@
     [ "pyro-dagger", "pyro-mace" ],
     [ "purple-walker", "extraction" ],
     [ "lincho", "kvado"],
+    [ "wesp", "shmel" ],
     [ "numale", "vospolneniya"],
     [ "flora-bomber", "flora-fighter"],
     [ "nilo", "delta" ]

@@ -41,7 +41,16 @@
         { "item": "metal-glass", "amount": 25 },
         { "item": "zambit", "amount": 15 }
       ]
-    }
+    },
+    { 
+      "unit": "wesp",
+      "time": 1500.0,
+      "requirements": [
+        { "item": "iron-ingot", "amount": 35 },
+        { "item": "metal-glass", "amount": 20 },
+        { "item": "zambit", "amount": 15 }
+      ]
+    }   
   ],
   
   "drawer": {

@@ -5,9 +5,11 @@
   "description": "Начальный Т1 артиллерийский корабль Floralia. Способен передвигаться только по воде. Идеально слушается команд игрока. Оснащён лёгкой мортирой для обстрела через стены.",
   "shownPlanets": [ "floralia" ],
   
-  "health": 950,
+  "health": 1350,
   "armor": 2,
   "hitSize": 9.0,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "speed": 0.85,
   "rotateSpeed": 4.0,
   "drag": 0.13,

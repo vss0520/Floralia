@@ -13,6 +13,8 @@
   "health": 500,
   "armor": 0,
   "hitSize": 7,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "itemCapacity": 0,
   
   "targetFlags": [ "generator" ],

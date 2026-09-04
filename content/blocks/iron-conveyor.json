@@ -9,7 +9,7 @@
   "category": "distribution",
   
   "speed": 0.100,
-  "displayedSpeed": 14.3,
+  "displayedSpeed": 12,
   
   "requirements": [
     { "item": "iron-ingot", "amount": 2 }

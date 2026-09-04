@@ -14,7 +14,7 @@
   
   "requirements": [
     { "item": "metal-glass", "amount": 2 },
-    { "item": "stone", "amount": 4 }
+    { "item": "stone", "amount": 1 }
   ],
   "research": "metal-glass-conduit",
   "researchCost": [ "metal-glass/20", "stone/40" ]

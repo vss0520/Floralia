@@ -8,8 +8,10 @@
   "speed": 0.65,
   "drag": 0.4,
   "hitSize": 12.0,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "rotateSpeed": 3.5,
-  "health": 750,
+  "health": 1250,
   "armor": 0.0,
   
   "legCount": 4,
@@ -23,7 +25,7 @@
   "weapons": [
     {
       "name": "purple-cannon",
-      "reload": 60.0,
+      "reload": 65.0,
       "x": 0.0,
       "y": 2.0,
       "mirror": false,
@@ -32,7 +34,7 @@
       
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 50.0,
+        "damage": 75.0,
         "speed": 3.0,
         "lifetime": 40.0,
         

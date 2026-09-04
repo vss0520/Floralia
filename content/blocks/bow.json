@@ -9,7 +9,7 @@
   "health": 400,
   "category": "turret",
   
-  "reload": 180.0,
+  "reload": 170.0,
   "range": 200.0,
   
   "drawer": {
@@ -31,7 +31,7 @@
   "ammoTypes": {
     "arrow": {
       "type": "BasicBulletType",
-      "damage": 30.0,
+      "damage": 45.0,
       "speed": 6.5,
       "lifetime": 30.0,
       "width": 5.0,
@@ -48,7 +48,7 @@
     },
     "fire-arrow": {
       "type": "BasicBulletType",
-      "damage": 45.0,
+      "damage": 60.0,
       "speed": 6.5,
       "lifetime": 30.7,
       "width": 6.0,

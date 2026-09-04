@@ -13,7 +13,7 @@
   
   "requirements": [
     { "item": "metal-glass", "amount": 10 },
-    { "item": "stone", "amount": 15 }
+    { "item": "stone", "amount": 5 }
   ],
   "research": "metal-glass-kiln",
   "researchCost": [ "metal-glass/100", "stone/150" ]

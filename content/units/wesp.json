@@ -1,0 +1,77 @@
+{
+  "type": "tank",
+  "name": "wesp",
+  "localizedName": "Оса",
+  "uiIcon": "wesp-icon",
+  "description": "Быстрый лёгкий танк T1. Вооружён одной пробивной пушкой, стреляющей быстрыми снарядами.",
+
+  "shownPlanets": ["floralia"],
+
+  "speed": 1.5,
+  "rotateSpeed": 3.0,
+  "accel": 0.08,
+  "drag": 0.10,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "faceTarget": false,
+  "health": 1250,
+  "armor": 2,
+  "hitSize": 15,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
+  "drawer": {
+    "type": "DrawTank",
+    "treadTracks": true
+  },
+
+
+  "itemCapacity": 20,
+
+  "weapons": [
+    {
+      "name": "wesp-cannon",
+      "reload": 55.0,
+      "x": 0.0,
+      "y": 0.0,
+      "shootY": 1.0,
+      "rotate": true,
+      "rotateSpeed": 5.0,
+      "drawInvisible": false,
+      "mirror": false,
+      "alternate": false,
+      "top": true,
+      "recoil": 1.0,
+      "shootSound": "explosionDull",
+
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 50.0,
+        "speed": 7.5,
+        "lifetime": 20.0,
+        "width": 2.0,
+        "height": 7.0,
+
+        "pierce": true,
+        "pierceCap": 1,
+
+        "frontColor": "ffffff",
+        "backColor": "d9e85a",
+        "trailColor": "d9e85a",
+        "trailWidth": 1.5,
+        "trailLength": 8,
+
+        "hitEffect": "hitBulletSmall",
+        "despawnEffect": "none"
+      }
+    }
+  ],
+
+  "research": {
+    "parent": "zavesa",
+    "requirements": [
+      "iron-ingot/100",
+      "metal-glass/150",
+      "zambit/50"
+    ]
+  }
+}

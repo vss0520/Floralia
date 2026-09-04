@@ -6,8 +6,10 @@
   "sector": 0,
   "difficulty": 1,
   "alwaysUnlocked": true,
- "overrideLaunchDefaults": true,
- "captureWave": 23,
- "waves": true,
- "map": "startet-poligon"
+  "overrideLaunchDefaults": true,
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": true,
+  "captureWave": 23,
+  "waves": true,
+  "map": "startet-poligon"
 }

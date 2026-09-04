@@ -7,7 +7,9 @@
   
   "speed": 0.55,
   "hitSize": 8.0,
-  "health": 550.0,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
+  "health": 550,
   "mechFrontSway": 0.55,
   
   "immunities":[
@@ -25,7 +27,7 @@
       
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 20.0,
+        "damage": 25.0,
         "speed": 3.0,
         "lifetime": 40.0,
         "width": 7.0,
@@ -34,7 +36,7 @@
         "frontColor": "ffaa5f",
         "backColor": "d37f3a",
         "status": "burning",
-        "statusDuration": 240.0,
+        "statusDuration": 120.0,
         "incendChance": 0.4,
         "incendAmount": 1,
         

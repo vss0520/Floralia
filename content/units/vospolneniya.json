@@ -11,9 +11,11 @@
   "rotateSpeed": 8.0,
   "accel": 0.15,
   "itemCapacity": 40,
-  "health": 1300,
+  "health": 1500,
   "armor": 3,
   "hitSize": 12,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   
   "buildSpeed": 0.8,
   "mineTier": 2,

@@ -8,9 +8,11 @@
   "drag": 0.4,
   "speed": 0.50,
   "rotateSpeed": 3.2,
-  "health": 2500,
+  "health": 4000,
   "armor": 9,
   "hitSize": 18,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   
   "immunities": [
     "burning"
@@ -31,15 +33,15 @@
       "bullet": {
         "type": "BasicBulletType",
         "sprite": "circle",
-        "damage": 150.0,
+        "damage": 300.0,
         "speed": 4.5,
         "lifetime": 35.0,
         "width": 12.0,
         "height": 12.0,
         "shrinkX": 0.0,
         "shrinkY": 0.0,
-        "splashDamage": 100.0,
-        "splashDamageRadius": 50.0,
+        "splashDamage": 150.0,
+        "splashDamageRadius": 30.0,
         "frontColor": "ffffff",
         "backColor": "ffb360",
         "trailColor": "ff8400",

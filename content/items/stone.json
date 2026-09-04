@@ -6,7 +6,7 @@
  description: "the most common natural mineral",
  hardness: 1,
  cost:2.0
- color: "000000"
+ color: "666A6A"
  tier: 2
  research: "core-flora"
 }

@@ -20,19 +20,16 @@
   "liquidCapacity": 15.0,
   
   "consumes": {
-    "power": 5.0,
-    "liquid": {
-      "liquid": "water",
-      "amount": 0.08,
-      "booster": true,
-      "boostScale": 3,
-      "optional": true
+  "power": 2.0,
+  "coolant": {
+    "amount": 0.10
     }
   },
+  "coolantMultiplier": 15,
   
   "shootType": {
     "type": "LaserBoltType",
-    "damage": 15.0,
+    "damage": 20.0,
     "speed": 5.5,
     "lifetime": 30.0,
     "width": 2.0,

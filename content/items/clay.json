@@ -4,7 +4,7 @@
   "localizedName": "Глина",
   "shownPlanets": [ "floralia" ],
   "description": "Базовый строительный ресурс. Добывается из глиняного покрытия.",
-  "color": "c47551",
+  "color": "8A8A84",
   "flammability": 0.0,
   "explosiveness": 0.0,
   "radioactivity": 0.0,

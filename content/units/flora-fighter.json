@@ -13,6 +13,8 @@
   "health": 1300,
   "armor": 2,
   "hitSize": 10,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "itemCapacity": 0,
   
   "circleTarget": true,
@@ -33,9 +35,9 @@
       "shootCone": 45.0,
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 15.0,
+        "damage": 30.0,
         "speed": 5.5,
-        "lifetime": 22.0,
+        "lifetime": 20.0,
         "width": 6.0,
         "height": 9.0,
         "frontColor": "ffffff",

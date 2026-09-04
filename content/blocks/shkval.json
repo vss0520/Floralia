@@ -1,0 +1,105 @@
+{
+  "type": "ItemTurret",
+  "name": "shkval",
+  "localizedName": "Шквал",
+  "description": "Тяжёлая ракетная установка 3x3. Выпускает две последовательные трёхракетные очереди с лёгким самонаведением.",
+
+  "shownPlanets": ["floralia"],
+
+  "size": 3,
+  "health": 1500,
+  "category": "turret",
+
+  "range": 450,
+  "reload": 750,
+  "inaccuracy": 2,
+  "shootCone": 15,
+  "rotateSpeed": 3,
+  "recoil": 3,
+  "shake": 2,
+
+  "hasLiquids": true,
+  "liquidCapacity": 20,
+
+  "consumes": {
+    "coolant": {
+      "amount": 0.10
+    }
+  },
+
+  "coolantMultiplier": 15,
+
+  "shoot": {
+    "type": "ShootBarrel",
+    "shots": 3,
+    "shotDelay": 90,
+
+    "barrels": [
+      -8, -10, 0,
+      -6, -10, 0,
+      -4, -10, 0,
+
+       8, -10, 0,
+       6, -10, 0,
+       4, -10, 0
+    ]
+  },
+
+  "ammoTypes": {
+
+    "zambiy": {
+      "type": "MissileBulletType",
+
+      "damage": 250,
+      "speed": 4.5,
+      "lifetime": 100,
+      "buildingDamageMultiplier": 0.2,
+
+      "width": 6,
+      "height": 12,
+
+      "homingPower": 0.1,
+      "homingRange": 300,
+
+      "splashDamage": 150,
+      "splashDamageRadius": 30,
+
+      "frontColor": "ffffff",
+      "backColor": "ffb360",
+      "trailColor": "ff8400",
+
+      "trailLength": 8,
+      "trailWidth": 2,
+
+      "shootEffect": "shootSmokeMissile",
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
+
+      "status": "burning",
+      "statusDuration": 90
+    }
+  },
+
+  "shootSound": "shootMissileLarge",
+
+  "requirements": [
+    {
+      "item": "brick",
+      "amount": 175
+    },
+    {
+      "item": "zambit",
+      "amount": 75
+    },
+    {
+      "item": "glass-metal-alloy",
+      "amount": 100
+    },
+    {
+      "item": "iron-ingot",
+      "amount": 125
+    }
+  ],
+
+  "research": "pompa"
+}

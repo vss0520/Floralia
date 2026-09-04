@@ -1,1 +1,1 @@
-{  "type": "WallOre",  "name": "wood-ore-wall",  "description": "Стена, пронизанная прочными деревянными корнями. Из неё можно добыть древесину.",  "variants": 3,  "solid": true,  "fillCollide": true,  "group": "walls",  "attributes": {    "wood_source": 1.0  }}
+{  "type": "WallOre",  "name": "wood-ore-wall",  "description": "Стена, пронизанная прочными деревянными корнями. Из неё можно добыть древесину.",  "variants": 3,  "solid": true,  "fillCollide": true,  "group": "walls",  "replaceable": false,  "attributes": {    "wood_source": 1.0  }}

@@ -13,7 +13,7 @@
   
   "requirements": [
     { "item": "metal-glass", "amount": 5 },
-    { "item": "stone", "amount": 5 }
+    { "item": "stone", "amount":  3 }
   ],
   "research": "metal-glass-liquid-junction",
   "researchCost": [ "metal-glass/50", "stone/50" ]

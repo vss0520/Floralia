@@ -21,7 +21,7 @@
     "molten-metal": {
       "type": "LiquidBulletType",
       "liquid": "molten-metal",
-      "damage": 22.0,
+      "damage": 7.0,
       "speed": 4.0,
       "lifetime": 32.5,
       "status": "melting",
@@ -46,7 +46,7 @@
     "bio-fuel": {
       "type": "LiquidBulletType",
       "liquid": "bio-fuel",
-      "damage": 18.0,
+      "damage": 5.0,
       "speed": 4.5,
       "lifetime": 28.8,
       "status": "burning",

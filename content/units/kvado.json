@@ -5,9 +5,11 @@
   "description": "Продвинутый Т2 шагоход поддержки Floralia. Защищает армию усиленным куполом-щитом и мощным полем регенерации. Оснащён одной тяжёлой центральной лазерной пушкой.",
   "shownPlanets": [ "floralia" ],
   
-  "health": 1300,
+  "health": 1500,
   "armor": 3,
   "hitSize": 11.0,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "speed": 0.48,
   "rotateSpeed": 4.2,
   "drag": 0.4,
@@ -25,10 +27,10 @@
   "abilities": [
     {
       "type": "ForceFieldAbility",
-      "radius": 60.0,
-      "regen": 0.4,
-      "max": 300.0,
-      "cooldown": 180.0
+      "radius": 40.0,
+      "regen": 0.07,
+      "max": 500.0,
+      "cooldown": 450.0
     },
     {
       "type": "RepairFieldAbility",
@@ -40,7 +42,7 @@
   "weapons": [
     {
       "name": "kvado-heavy-laser",
-      "reload": 55.0,
+      "reload": 65.0,
       "x": 0.0,
       "y": 2.0,
       "shootY": 3.0,
@@ -49,7 +51,7 @@
       "shootSound": "shootLancer",
       "bullet": {
         "type": "LaserBulletType",
-        "damage": 75.0,
+        "damage": 120.0,
         "healPercent": 1.0,
         "collidesTeam": true,
         "length": 120.0,

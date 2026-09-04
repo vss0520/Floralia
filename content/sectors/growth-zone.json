@@ -1,0 +1,21 @@
+{
+  "name": "growth-zone",
+  "localizedName": "Зона роста",
+  "description": "Территория, где природа Флорарии начинает стремительно восстанавливаться.",
+  "planet": "floralia",
+  "sector": 4,
+  "difficulty": 5,
+  "alwaysUnlocked": false,
+
+  "attack": true,
+  "waves": true,
+
+  "overrideLaunchDefaults": true,
+  "allowLaunchLoadout": true,
+  "allowLaunchSchematics": true,
+
+  "research": "shkval"
+
+  "captureWave": 39,
+  "map": "growth-zone"
+}

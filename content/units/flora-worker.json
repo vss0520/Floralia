@@ -11,36 +11,38 @@
   "rotateSpeed": 15.0,
   "accel": 0.1,
   "itemCapacity": 30,
-  "health": 170,
+  "health": 500,
   "engineSize": 1.8,
   "engineOffset": 4.5,
   "hitSize": 8,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   
   "coreUnitDock": true,
   "controller": "BuilderAI",
   "defaultController": "BuilderAI",
   "mineTier": 1,
-  "mineSpeed": 1.5,
-  "buildSpeed": 0.8,
+  "mineSpeed": 2,
+  "buildSpeed": 1,
   
   "weapons": [
     {
       "name": "flora-laser",
-      "reload": 20,
+      "reload": 25,
       "x": 0,
       "y": 2,
       "top": false,
       "mirror": false,
       "bullet": {
         "type": "LaserBoltBulletType",
-        "speed": 5.2,
-        "damage": 5,
+        "speed": 10,
+        "damage": 15,
         "buildingDamageMultiplier": 0.05,
-        "healPercent": 1.0,
+        "healPercent": 0.5,
         "collidesTeam": true,
         "frontColor": "a7f5a7",
         "backColor": "2b8b4a",
-        "lifetime": 25
+        "lifetime": 15
       }
     }
   ]

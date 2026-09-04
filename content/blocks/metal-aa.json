@@ -22,14 +22,11 @@
   "liquidCapacity": 15.0,
   
   "consumes": {
-    "liquid": {
-      "liquid": "water",
-      "amount": 0.08,
-      "booster": true,
-      "boostScale": 1.5,
-      "optional": true
+  "coolant": {
+    "amount": 0.10
     }
   },
+  "coolantMultiplier": 15,
   
   "shoot": {
     "type": "ShootAlternate",

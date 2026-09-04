@@ -45,8 +45,8 @@
       { "item": "zambiy", "amount": 1 }
     ],
     "liquids": [
-      { "liquid": "molten-metal", "amount": 0.5 },
-      { "liquid": "water", "amount": 0.6667 }
+      { "liquid": "molten-metal", "amount": 0.4 },
+      { "liquid": "water", "amount": 0.7 }
     ]
   },
   

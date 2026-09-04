@@ -8,8 +8,10 @@
   "speed": 0.5,
   "drag": 0.4,
   "hitSize": 13.0,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "rotateSpeed": 2.5,
-  "health": 1500,
+  "health": 1700,
   "armor": 3.0,
   
   "legCount": 4,
@@ -56,7 +58,7 @@
     }
   ],
   "research": {
-    "parent": "purple-walcer",
+    "parent": "purple-walker",
     "requirements": [ "metal-glass/300", "iron-ingot/450" ]
   }
 }

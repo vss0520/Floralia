@@ -5,9 +5,11 @@
   "description": "Начальный Т1 шагоход поддержки Floralia. Идеально слушается команд игрока и защищает союзников куполом-щитом. Бьёт по очереди из рук мощными зелёными лазерными лучами.",
   "shownPlanets": [ "floralia" ],
   
-  "health": 650,
+  "health": 750,
   "armor": 1,
   "hitSize": 8.0,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
   "speed": 0.55,
   "rotateSpeed": 5.0,
   "drag": 0.4,
@@ -25,10 +27,10 @@
   "abilities": [
     {
       "type": "ForceFieldAbility",
-      "radius": 40.0,
-      "regen": 0.2,
-      "max": 200.0,
-      "cooldown": 120.0
+      "radius": 30.0,
+      "regen": 0.05,
+      "max": 250.0,
+      "cooldown": 500.0
     },
     {
       "type": "RepairFieldAbility",
@@ -50,7 +52,7 @@
       "shootSound": "shootLancer",
       "bullet": {
         "type": "LaserBulletType",
-        "damage": 15.0,
+        "damage": 25.0,
         "healPercent": 1.0,
         "collidesTeam": true,
         "length": 85.0,

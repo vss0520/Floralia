@@ -17,6 +17,16 @@
   "recoil": 3.0,
   "shake": 1.5,
   
+  "hasLiquids": true,
+  "liquidCapacity": 20,
+  
+  "consumes": {
+  "coolant": {
+    "amount": 0.10
+    }
+  },
+  "coolantMultiplier": 10,
+  
   "ammoTypes": {
     "metal-glass": {
       "type": "BasicBulletType",

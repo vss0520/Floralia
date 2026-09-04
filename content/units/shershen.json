@@ -1,0 +1,143 @@
+{
+  "type": "tank",
+  "name": "shershen",
+  "localizedName": "Шершень",
+  "description": "Тяжёлый T3 танк с боковыми щитами и мощным пробивным орудием.",
+  "shownPlanets": [ "floralia" ],
+
+  "speed": 1,
+  "rotateSpeed": 1.7,
+  "accel": 0.08,
+  "drag": 0.10,
+  "omniMovement": false,
+  "rotateMoveFirst": true,
+  "faceTarget": false,
+  "health": 5000,
+  "armor": 8,
+  "hitSize": 23,
+  "outlineRadius": 0,
+  "outlineColor": "00000000",
+
+  "itemCapacity": 40,
+
+  "immunities": [
+    "burning"
+  ],
+  "abilities": [
+  {
+    "type": "ShieldArcAbility",
+    "x": 15.0,
+    "y": 0.0,
+    "radius": 30.0,
+    "angle": 65.0,
+    "angleOffset": 90.0,
+    "width": 2,
+    "max": 1000.0,
+    "regen": 0.3,
+    "cooldown": 500.0,
+    "chanceDeflect": 0.3,
+    "whenShooting": false
+  },
+  {
+    "type": "ShieldArcAbility",
+    "x": -15.0,
+    "y": 0.0,
+    "radius": 30.0,
+    "angle": 65.0,
+    "angleOffset": -90.0,
+    "width": 2.0,
+    "max": 1000.0,
+    "regen": 0.3,
+    "cooldown": 500.0,
+    "chanceDeflect": 0.3,
+    "whenShooting": false
+  }
+],
+  "weapons": [
+    {
+      "name": "shershen-cannon",
+      "reload": 135,
+      "x": 0,
+      "y": 0,
+      "shootY": 10,
+      "rotate": true,
+      "rotateSpeed": 2.5,
+      "mirror": false,
+      "top": true,
+      "recoil": 2,
+      "shootSound": "explosionDull",
+
+      "bullet": {
+         "type": "BasicBulletType",
+         "damage": 360,
+         "speed": 9,
+         "lifetime": 30,
+
+         "width": 2.5,
+         "height": 10,
+
+         "pierce": true,
+         "pierceCap": 3,
+
+         "frontColor": "ffffff",
+         "backColor": "e0a83a",
+
+         "trailColor": "e0a83a",
+         "trailWidth": 1.5,
+         "trailLength": 9,
+
+         "hitEffect": "hitBulletSmall"
+      }
+    },
+    {
+      "name": "shershen-machinegun",
+      "x": 0,
+      "y": 0,
+      "shootY": 7,
+      "shootX": 4,
+
+      "mirror": true,
+      "alternate": false,
+
+      "rotate": true,
+      "rotateSpeed": 2.5,
+
+      "reload": 5.0,
+      "recoil": 0.0,
+
+      "top": true,
+
+      "bullet": {
+         "type": "BasicBulletType",
+
+         "damage": 30.0,
+         "speed": 10.0,
+         "lifetime": 25.0,
+
+         "width": 2.0,
+         "height": 6.0,
+
+         "frontColor": "ffff66",
+         "backColor": "f2c94c",
+
+         "trailColor": "f2c94c",
+         "trailWidth": 0.8,
+         "trailLength": 4,
+
+         "shootEffect": "none",
+         "hitEffect": "none",
+         "despawnEffect": "none"
+    }
+  }
+  ],
+  
+  "research": {
+  "parent": "shmel",
+  "requirements": [
+    "glass-metal-alloy/700",
+    "zambit/500",
+    "metal-glass/500",
+    "iron-ingot/650",
+    ]
+  }
+}
