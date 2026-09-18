@@ -9,7 +9,7 @@
   "health": 900,
   "category": "turret",
   
-  "reload": 250.0,
+  "reload": 200.0,
   "range": 320.0,
   
   "drawer": {

@@ -113,13 +113,13 @@
 
     "zambiy": {
       "type": "BasicBulletType",
-      "damage": 10,
+      "damage": 25,
       "speed": 5,
       "lifetime": 25,
       "width": 5,
       "height": 7,
       "splashDamage": 25,
-      "splashDamageRadius": 5,
+      "splashDamageRadius": 10,
       "frontColor": "ffffff",
       "backColor": "ccd6dd",
       "shootSound": "shootDiffuse"

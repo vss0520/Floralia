@@ -53,16 +53,16 @@
       "damage": 250,
       "speed": 4.5,
       "lifetime": 100,
-      "buildingDamageMultiplier": 0.2,
+      "buildingDamageMultiplier": 0.1,
 
       "width": 6,
       "height": 12,
 
-      "homingPower": 0.1,
-      "homingRange": 300,
+      "homingPower": 0.01,
+      "homingRange": 20,
 
-      "splashDamage": 150,
-      "splashDamageRadius": 30,
+      "splashDamage": 100,
+      "splashDamageRadius": 50,
 
       "frontColor": "ffffff",
       "backColor": "ffb360",

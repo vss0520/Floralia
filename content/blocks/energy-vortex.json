@@ -1,8 +1,9 @@
 {
   "type": "PowerTurret",
-  "name": "energy-vortex",
+  "name": "vortex",
   "localizedName": "Энергетический Вихрь",
   "description": "Продвинутая плазменная турель формата 2х2. Потребляет только чистую энергию. Выпускает непрерывный град скорострельных фиолетовых лазерных зарядов из мощного одиночного ствола. Ускоряется водой.",
+  "planet": "floralia",
   "shownPlanets": [ "floralia" ],
   
   "size": 2,
@@ -46,6 +47,6 @@
     { "item": "metal-glass", "amount": 15 },
     { "item": "iron-ingot", "amount": 30 }
   ],
-  "research": "pulsar",
+  "research": "pompa",
   "researchCost": ["glass-metal-alloy/100", "iron-ingot/200", "metal-glass/150"]
 }

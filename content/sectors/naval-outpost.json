@@ -7,7 +7,7 @@
   "difficulty": 3,
   "alwaysUnlocked": false,
   "attack": true,
-  "waves": false,
+  "waves": true,
   "overrideLaunchDefaults": true,
   "allowLaunchLoadout": true,
   "allowLaunchSchematics": true,

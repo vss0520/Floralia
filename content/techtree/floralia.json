@@ -133,7 +133,7 @@
                                                 { "node": "metal-aa" },
                                                 { "node": "heavy-artillery" },
                                                 { "node": "cluster-turret" },
-                                                { "node": "pulsar", "children": [{ "node": "energy-vortex" }] }
+                                                { "node": "pulsar", "children": [{ "node": "vortex" }] }
                                               ]
                                             },
                                             { "node": "iron-wall", "children": [{ "node": "iron-wall-large" }, { "node": "iron-mend-projector" }] },
